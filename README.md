@@ -9,6 +9,7 @@
   <img alt="Windows" src="https://img.shields.io/badge/WINDOWS-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
   <img alt="AME Playbook" src="https://img.shields.io/badge/AME-PLAYBOOK-202020?style=for-the-badge">
   <img alt="Defender retained" src="https://img.shields.io/badge/DEFENDER-RETAINED-16A34A?style=for-the-badge&logo=windowsdefender&logoColor=white">
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-4B5563?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -83,18 +84,19 @@ Chỉ tắt nhóm phần cứng khi máy không sử dụng thiết bị tương
 
 Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua; thành phần còn thiếu chỉ được cài từ nguồn Microsoft có chữ ký hợp lệ.
 
-Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, trạng thái sẽ được ghi là `Unavailable` hoặc `SkippedNoSource`. Quá trình tối ưu vẫn tiếp tục và không báo cài thành công giả.
+> [!NOTE]
+> Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, Runtime sẽ được ghi là `Unavailable` hoặc `SkippedNoSource`. Playbook vẫn tiếp tục và không báo cài thành công giả.
 
 ## 📖 Cài đặt
 
-1. Sao lưu dữ liệu quan trọng hoặc tạo Snapshot.
-2. Kết nối Internet và cắm nguồn cho thiết bị.
-3. Tải tệp `.apbx` từ Releases.
-4. Mở tệp bằng AME Wizard.
-5. Chọn Standard hoặc Performance cùng các mục cần dùng.
-6. Không tắt máy hoặc thoát AME Wizard khi Playbook đang chạy.
-7. Khởi động lại Windows sau khi hoàn tất.
-8. Chờ 10–15 phút trước khi đo Process, RAM và hiệu năng.
+> [!CAUTION]
+> Hãy sao lưu dữ liệu quan trọng hoặc tạo Snapshot trước khi chạy. Không tắt máy, thoát AME Wizard hoặc chạy thêm công cụ tối ưu trong lúc Playbook đang áp dụng.
+
+1. Tải tệp `.apbx` mới nhất từ **Releases**.
+2. Mở **AME Wizard**, sau đó kéo thả tệp `.apbx` vào cửa sổ ứng dụng.
+3. Chọn **Standard** hoặc **Performance** cùng các mục cần dùng.
+4. Xác nhận và chờ Playbook hoàn tất.
+5. Khởi động lại Windows, chờ 10–15 phút rồi mới đo Process, RAM và hiệu năng.
 
 ## ⚠️ Lưu ý
 
@@ -105,6 +107,9 @@ Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, trạng thái
 - Nên thử trên máy ảo hoặc Windows mới trước khi dùng trên máy chính.
 
 ## 🛠️ Báo lỗi
+
+> [!TIP]
+> Gửi Log đầy đủ sẽ giúp xác định đúng Action gây lỗi. Không cắt riêng dòng cuối vì thường thiếu nguyên nhân ban đầu.
 
 Khi tạo Issue, hãy gửi:
 
