@@ -11,25 +11,31 @@
   <img alt="Defender retained" src="https://img.shields.io/badge/DEFENDER-RETAINED-16A34A?style=for-the-badge&logo=windowsdefender&logoColor=white">
 </p>
 
+<p align="center">
+  <img alt="Supported builds" src="https://img.shields.io/badge/BUILD-19045%20%7C%2026100%20%7C%2026200-2563EB?style=flat-square">
+  <img alt="Architecture" src="https://img.shields.io/badge/ARCH-x64-6D28D9?style=flat-square">
+  <img alt="Profiles" src="https://img.shields.io/badge/PROFILE-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
+</p>
+
 <p align="center"><strong>Tinh gọn để chơi game. Giữ lại những gì Windows và Anti-cheat thực sự cần.</strong></p>
 
 <p align="center">
-  <a href="https://strikeos.site">Website</a>
+  <a href="https://strikeos.site">🌐 Website</a>
   •
-  <a href="https://discord.gg/strikeos">Discord</a>
+  <a href="https://discord.gg/strikeos">💬 Discord</a>
   •
-  <a href="#cài-đặt">Cài đặt</a>
+  <a href="#-cài-đặt">📖 Cài đặt</a>
   •
-  <a href="#báo-lỗi">Báo lỗi</a>
+  <a href="#-báo-lỗi">🛠️ Báo lỗi</a>
 </p>
 
-## Giới thiệu
+## 🎮 Giới thiệu
 
 SuperStrike X1 là Playbook tối ưu Windows dành cho máy chơi game. Dự án tập trung giảm hoạt động nền, cải thiện Latency, giữ Frame Time ổn định và hạn chế ảnh hưởng đến FPS, 1% Low và 0.1% Low.
 
 Playbook áp dụng trực tiếp trên Windows đang sử dụng, không phải bản Windows tùy chỉnh và không yêu cầu cài lại hệ điều hành.
 
-## Hệ điều hành hỗ trợ
+## 🪟 Hệ điều hành hỗ trợ
 
 | Hệ điều hành | Phiên bản | Build |
 |---|---:|---:|
@@ -39,7 +45,7 @@ Playbook áp dụng trực tiếp trên Windows đang sử dụng, không phải
 
 Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai thiết lập.
 
-## Điểm chính
+## ✨ Điểm chính
 
 - Tinh gọn ứng dụng, dịch vụ và tác vụ nền không cần thiết.
 - Giảm hoạt động thu thập dữ liệu và nội dung quảng bá của Windows.
@@ -49,19 +55,19 @@ Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai thiế
 - Không kèm Toolbox, phần mềm quảng cáo hoặc gói Post-install.
 - Hỗ trợ cài Brave, Firefox hoặc Chrome theo lựa chọn.
 
-## Chế độ
+## ⚙️ Chế độ
 
-### Standard
+### 🛡️ Standard
 
 Cấu hình mặc định, cân bằng giữa tinh gọn, ổn định và tương thích. Phù hợp với phần lớn máy tính.
 
-### Performance
+### 🚀 Performance
 
 Bao gồm Standard và bổ sung TRIM, RSS, TCP Auto-Tuning, thiết lập Card mạng, Power Plan, Core Parking, HAGS, MSI Mode, HPET, Timer Resolution và đặt lại Winsock/IP.
 
 Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy đo FPS, 1% Low, 0.1% Low và Frame Time trước khi quyết định sử dụng lâu dài.
 
-## Lựa chọn bổ sung
+## 🧩 Lựa chọn bổ sung
 
 - Gỡ OneDrive.
 - Gỡ Xbox và Game Bar.
@@ -73,13 +79,13 @@ Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy 
 
 Chỉ tắt nhóm phần cứng khi máy không sử dụng thiết bị tương ứng.
 
-## Gaming Runtime
+## 📦 Gaming Runtime
 
 Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua; thành phần còn thiếu chỉ được cài từ nguồn Microsoft có chữ ký hợp lệ.
 
 Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, trạng thái sẽ được ghi là `Unavailable` hoặc `SkippedNoSource`. Quá trình tối ưu vẫn tiếp tục và không báo cài thành công giả.
 
-## Cài đặt
+## 📖 Cài đặt
 
 1. Sao lưu dữ liệu quan trọng hoặc tạo Snapshot.
 2. Kết nối Internet và cắm nguồn cho thiết bị.
@@ -90,7 +96,7 @@ Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, trạng thái
 7. Khởi động lại Windows sau khi hoàn tất.
 8. Chờ 10–15 phút trước khi đo Process, RAM và hiệu năng.
 
-## Lưu ý
+## ⚠️ Lưu ý
 
 - Không chạy đồng thời Windows Update, DISM, trình cài Driver hoặc công cụ tối ưu khác.
 - Một số thay đổi chỉ có hiệu lực sau khi khởi động lại.
@@ -98,7 +104,7 @@ Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, trạng thái
 - Số Process, RAM và hiệu năng phụ thuộc phần cứng, Driver, Edition và phần mềm đang cài.
 - Nên thử trên máy ảo hoặc Windows mới trước khi dùng trên máy chính.
 
-## Báo lỗi
+## 🛠️ Báo lỗi
 
 Khi tạo Issue, hãy gửi:
 
