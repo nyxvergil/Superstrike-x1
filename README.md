@@ -18,7 +18,7 @@
   <img alt="Profiles" src="https://img.shields.io/badge/PROFILE-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
 </p>
 
-<p align="center"><strong>Tinh gọn để chơi game. Giữ lại những gì Windows và Anti-cheat thực sự cần.</strong></p>
+<p align="center"><strong>Debloat để chơi game. Giữ lại những gì Windows và Anti-cheat thực sự cần.</strong></p>
 
 <p align="center">
   <a href="https://strikeos.site">🌐 Website</a>
