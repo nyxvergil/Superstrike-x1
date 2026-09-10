@@ -122,6 +122,14 @@ Khi tạo Issue, hãy gửi:
 
 Không đăng mật khẩu, Token, khóa sản phẩm hoặc thông tin cá nhân lên Issue công khai.
 
+📚 Nguồn tham khảo
+
+SuperStrike X1 được phát triển độc lập, đồng thời tham khảo ý tưởng, cách tổ chức và phương pháp tối ưu từ nhiều dự án cộng đồng như AtlasOS, ReviOS, XOS, FSOS , Atom và SapphireOS.
+
+Các thiết lập được chọn lọc, kiểm tra lại và điều chỉnh để phù hợp với mục tiêu của StrikeOS: Debloat Windows, cải thiện trải nghiệm chơi game và duy trì khả năng tương thích với Anti-cheat.
+
+StrikeOS không đại diện, không liên kết và không được bảo trợ bởi các dự án nêu trên. Tên gọi, thương hiệu, công cụ riêng và gói phần mềm của họ không được phân phối cùng dự án này.
+
 ---
 
 <p align="center">
