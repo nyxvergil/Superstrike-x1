@@ -32,9 +32,9 @@
 
 ## 🎮 Giới thiệu
 
-SuperStrike X1 là Playbook tối ưu Windows dành cho máy chơi game. Dự án tập trung giảm hoạt động nền, cải thiện Latency, giữ Frame Time ổn định và hạn chế ảnh hưởng đến FPS, 1% Low và 0.1% Low.
+SuperStrike X1 là Playbook tối ưu Windows dành cho Gamming. Dự án tập trung giảm Background Process, cải thiện Latency, giữ Frame Time ổn định và hạn chế ảnh hưởng đến FPS, 1% Low và 0.1% Low.
 
-Playbook áp dụng trực tiếp trên Windows đang sử dụng, không phải bản Windows tùy chỉnh và không yêu cầu cài lại hệ điều hành.
+Playbook áp dụng trực tiếp trên Windows đang sử dụng, Và chỉ hỗ trợ Các phiên bản window dưới đây. 
 
 ## 🪟 Hệ điều hành hỗ trợ
 
@@ -44,7 +44,7 @@ Playbook áp dụng trực tiếp trên Windows đang sử dụng, không phải
 | Windows 11 64-bit | 24H2 | `26100` |
 | Windows 11 64-bit | 25H2 | `26200` |
 
-Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai thiết lập.
+Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai Cài đặt.
 
 ## ✨ Điểm chính
 
@@ -54,19 +54,20 @@ Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai thiế
 - Giữ Windows Defender, Firewall, DEP, Secure Boot và các thành phần bảo mật cốt lõi.
 - Không vô hiệu hóa dịch vụ của Vanguard, Easy Anti-Cheat, BattlEye hoặc EA AntiCheat.
 - Không kèm Toolbox, phần mềm quảng cáo hoặc gói Post-install.
+- không cung cấp bản quyền và không bẻ khóa (crack/pre-activated). Khách hàng tự chịu trách nhiệm pháp lý về giấy phép/key bản quyền sử dụng trên máy.
 - Hỗ trợ cài Brave, Firefox hoặc Chrome theo lựa chọn.
 
 ## ⚙️ Chế độ
 
 ### 🛡️ Standard
 
-Cấu hình mặc định, cân bằng giữa tinh gọn, ổn định và tương thích. Phù hợp với phần lớn máy tính.
+Cấu hình mặc định, cân bằng giữa tinh gọn, ổn định và tương thích. Phù hợp với phần lớn PC Deskstop Và Laptop ( Notebook ).
 
 ### 🚀 Performance
 
 Bao gồm Standard và bổ sung TRIM, RSS, TCP Auto-Tuning, thiết lập Card mạng, Power Plan, Core Parking, HAGS, MSI Mode, HPET, Timer Resolution và đặt lại Winsock/IP.
 
-Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy đo FPS, 1% Low, 0.1% Low và Frame Time trước khi quyết định sử dụng lâu dài.
+Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy Kiểm Tra FPS, 1% Low, 0.1% Low và Frame Time trước khi quyết định sử dụng lâu dài.
 
 ## 🧩 Lựa chọn bổ sung
 
