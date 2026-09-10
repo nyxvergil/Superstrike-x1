@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://strikeos.site">
-    <img src="./assets/strike-logo.png" alt="StrikeOS" width="760">
+    <img src="./strike-logo.png" alt="StrikeOS" width="760">
   </a>
 </p>
 
