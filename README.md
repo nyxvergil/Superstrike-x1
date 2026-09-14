@@ -49,15 +49,15 @@
 
 ## 🎮 Giới thiệu SuperStrike X1
 
-Chào mọi người, **SuperStrike X1** là sản phẩm đầu tiên mình đóng gói và phát hành sau một thời gian dài tự mày mò, nghiên cứu về cách Windows điều phối tài nguyên và tối ưu độ trễ cho game.
+Chào mọi người, **SuperStrike X1** là dự án đầu tiên mình đóng gói và phát hành sau một thời gian tự tìm hiểu, tham khảo và thử nghiệm các cách Tinh chỉnh Windows để phù hợp  cho nhu cầu chơi game.
 
-Dự án ra đời với một tiêu chí rất rõ ràng: **Tinh gọn vừa đủ để mượt, nhưng tuyệt đối không phá hỏng hệ thống hay làm hỏng Anti-cheat**. 
+Mình muốn Windows bớt những thứ chạy nền không cần dùng, đồng thời giữ lại các chức năng và thành phần bảo mật cần thiết. Khả năng tương thích với game và Anti-cheat là điều mình ưu tiên, nhưng vẫn cần kiểm thử trên từng cấu hình thực tế.
 
-Là dự án đầu tay, mình biết sản phẩm chắc chắn sẽ còn những "hạt sạn", lỗi vặt hoặc chưa thể làm hài lòng tất cả mọi cấu hình máy. Vì vậy:
-- Mình luôn trân trọng mọi góp ý thẳng thắn, dù là khen hay chê.
-- Mình sẽ liên tục học hỏi, tinh chỉnh và update các tính năng thực sự cần thiết trong tương lai dựa trên phản hồi thực tế của các bạn.
+Đây là dự án đầu tay nên sẽ còn thiếu sót. Mình mong nhận được góp ý thẳng thắn, cả những trường hợp chạy tốt lẫn những lỗi gặp phải. Việc sửa lỗi và cập nhật sẽ dựa trên phản hồi thực tế cùng thời gian mình có thể dành cho dự án.
 
-Nếu trong quá trình trải nghiệm có phát sinh lỗi hoặc bạn có ý tưởng tối ưu nào hay, hãy hú mình qua [Discord](https://discord.gg/strikeos) hoặc tạo [Issue](../../issues) nhé. Rất mong nhận được sự đồng hành và đóng góp từ cộng đồng!
+Nếu gặp vấn đề hoặc có đề xuất, hãy nhắn qua [Discord](https://discord.gg/strikeos) hoặc tạo [Issue](https://github.com/nyxvergil/Superstrike-x1/issues). Khi báo lỗi, gửi kèm cấu hình máy và Log để mình có cơ sở kiểm tra.
+
+Cảm ơn mọi người đã dành thời gian dùng thử và góp ý.
 
 ---
 
@@ -76,23 +76,24 @@ Nếu trong quá trình trải nghiệm có phát sinh lỗi hoặc bạn có ý
 
 ## ⚙️ Các chế độ cấu hình
 
-Trong giao diện AME Wizard, bạn có thể lựa chọn 1 trong 2 chế độ phù hợp với nhu cầu:
+### 🛡️ Standard — Cấu hình mặc định
 
-### 🛡️ Chế độ Standard (Khuyến nghị cho số đông)
-- Cân bằng hoàn hảo giữa tính ổn định, độ trễ và sự tiện lợi hàng ngày.
-- Gỡ bỏ Bloatware, ứng dụng UWP rác, vô hiệu hóa Telemetry (theo dõi ngầm) và Diagnostics.
-- Tắt các dịch vụ chạy ngầm vô bổ, giữ nguyên các tính năng in ấn, Bluetooth và tìm kiếm cơ bản.
-- Phù hợp với mọi máy tính vừa dùng làm việc, vừa chơi game.
+- Gỡ ứng dụng theo danh sách, giảm Telemetry và điều chỉnh dịch vụ, tác vụ nền.
+- Áp dụng thiết lập hiệu năng của Gaming Lean, gồm bộ nhớ, ưu tiên foreground, FTH và BCD/timer.
+- Điều chỉnh Game DVR và các thiết lập giao diện.
+- Bluetooth và in ấn chỉ bị tắt khi chọn tùy chọn tương ứng. Windows Search được tích tắt sẵn; hãy bỏ chọn nếu còn dùng.
 
-### 🚀 Chế độ Performance (Dành cho máy thuần Gaming)
-- Bao gồm toàn bộ tối ưu của **Standard**.
-- **Mạng & Bộ đệm:** TCP Auto-Tuning, RSS (Receive Side Scaling), NetDMA, tinh chỉnh Network Adapter và thiết lập lại Winsock/IP Stack.
-- **Phần cứng & Nhân hệ thống:** Bật MSI Mode cho GPU/Network, thiết lập Power Plan tùy chỉnh, Core Parking off, Timer Resolution tối ưu và kích hoạt TRIM cho SSD.
-- **Đồ họa:** Đồng bộ HAGS (Hardware-Accelerated GPU Scheduling) và tối ưu hóa Game DVR.
+### 🚀 Performance — Thêm thiết lập mạng và phần cứng
 
-> [!TIP]
-> Chế độ **Performance** sẽ đặt lại cấu hình IP/Winsock. Nếu bạn đang cài **IP tĩnh hoặc DNS tùy chỉnh**, hãy lưu lại thông tin để thiết lập lại sau khi máy khởi động.
+- Bao gồm các thay đổi của **Standard**.
+- **Mạng:** Bật RSS, đặt TCP Auto-Tuning về `normal`, tắt RSC và chỉnh một số thuộc tính Card mạng khi có hỗ trợ. Reset Winsock/IP và xóa DNS cache.
+- **Nguồn điện:** Chọn High Performance trên Desktop; điều chỉnh Core Parking có phân biệt Laptop và trạng thái dùng nguồn.
+- **Đồ họa:** Ghi thiết lập bật HAGS; bật MSI Mode cho GPU/Card mạng được chọn khi đã có khóa cấu hình tương ứng.
+- **Storage:** Kiểm tra và bật TRIM khi cần, không chạy Defrag trong lúc cài.
+- **Timer:** Ép HPET qua BCD và tạo tác vụ chạy tiện ích nền yêu cầu Timer Resolution 0,5 ms.
 
+> [!WARNING]
+> Performance không bảo đảm nhanh hơn Standard. Hiệu quả phụ thuộc phần cứng và Driver. Hãy lưu cấu hình IP/DNS riêng trước khi chạy và đo hiệu năng trước/sau. Chọn Standard sau Performance không hoàn tác toàn bộ các thay đổi.
 ---
 
 ## 🧩 Tùy chọn bổ sung (Optional Components)
