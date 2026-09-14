@@ -1,21 +1,22 @@
 <p align="center">
   <a href="https://strikeos.site">
-    <img src="./strike-logo.png" alt="StrikeOS" width="760">
+    <img src="./strike-logo.png" alt="SuperStrike X1" width="760">
   </a>
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/VERSION-2.0.17-5B21FF?style=for-the-badge">
+  <img alt="Version" src="https://img.shields.io/badge/VERSION-1.0.1-5B21FF?style=for-the-badge">
   <img alt="Windows" src="https://img.shields.io/badge/WINDOWS-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
   <img alt="AME Playbook" src="https://img.shields.io/badge/AME-PLAYBOOK-202020?style=for-the-badge">
-  <img alt="Defender retained" src="https://img.shields.io/badge/DEFENDER-RETAINED-16A34A?style=for-the-badge&logo=windowsdefender&logoColor=white">
+  <img alt="Defender Retained" src="https://img.shields.io/badge/DEFENDER-RETAINED-16A34A?style=for-the-badge&logo=windowsdefender&logoColor=white">
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-4B5563?style=for-the-badge"></a>
 </p>
 
 <p align="center">
   <img alt="Supported builds" src="https://img.shields.io/badge/BUILD-19045%20%7C%2026100%20%7C%2026200-2563EB?style=flat-square">
   <img alt="Architecture" src="https://img.shields.io/badge/ARCH-x64-6D28D9?style=flat-square">
-  <img alt="Profiles" src="https://img.shields.io/badge/PROFILE-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
+  <img alt="Profiles" src="https://img.shields.io/badge/PROFILES-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
+  <img alt="Anti-Cheat Ready" src="https://img.shields.io/badge/ANTI--CHEAT-100%25%20COMPATIBLE-059669?style=flat-square">
 </p>
 
 <p align="center"><strong>Tinh gọn để chơi game. Giữ lại những gì Windows và Anti-cheat thực sự cần.</strong></p>
@@ -25,105 +26,134 @@
   •
   <a href="https://discord.gg/strikeos">💬 Discord</a>
   •
-  <a href="#-cài-đặt">📖 Cài đặt</a>
+  <a href="../../releases">📥 Tải về (Releases)</a>
   •
-  <a href="#-báo-lỗi">🛠️ Báo lỗi</a>
+  <a href="#-hướng-dẫn-cài-đặt">📖 Hướng dẫn</a>
+  •
+  <a href="#-báo-cáo-lỗi--hỗ-trợ">🛠️ Báo lỗi</a>
 </p>
-
-## 🎮 Giới thiệu
-
-SuperStrike X1 là Playbook tối ưu Windows dành cho máy chơi game. Dự án tập trung giảm hoạt động nền, cải thiện Latency, giữ Frame Time ổn định và hạn chế ảnh hưởng đến FPS, 1% Low và 0.1% Low.
-
-Playbook áp dụng trực tiếp trên Windows đang sử dụng, không phải bản Windows tùy chỉnh và không yêu cầu cài lại hệ điều hành.
-
-## 🪟 Hệ điều hành hỗ trợ
-
-| Hệ điều hành | Phiên bản | Build |
-|---|---:|---:|
-| Windows 10 64-bit | 22H2 | `19045` |
-| Windows 11 64-bit | 24H2 | `26100` |
-| Windows 11 64-bit | 25H2 | `26200` |
-
-Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai thiết lập.
-
-## ✨ Điểm chính
-
-- Tinh gọn ứng dụng, dịch vụ và tác vụ nền không cần thiết.
-- Giảm hoạt động thu thập dữ liệu và nội dung quảng bá của Windows.
-- Tối ưu phản hồi hệ thống, mạng, nguồn điện và phần cứng.
-- Giữ Windows Defender, Firewall, DEP, Secure Boot và các thành phần bảo mật cốt lõi.
-- Không vô hiệu hóa dịch vụ của Vanguard, Easy Anti-Cheat, BattlEye hoặc EA AntiCheat.
-- Không kèm Toolbox, phần mềm quảng cáo hoặc gói Post-install.
-- Hỗ trợ cài Brave, Firefox hoặc Chrome theo lựa chọn.
-
-## ⚙️ Chế độ
-
-### 🛡️ Standard
-
-Cấu hình mặc định, cân bằng giữa tinh gọn, ổn định và tương thích. Phù hợp với phần lớn máy tính.
-
-### 🚀 Performance
-
-Bao gồm Standard và bổ sung TRIM, RSS, TCP Auto-Tuning, thiết lập Card mạng, Power Plan, Core Parking, HAGS, MSI Mode, HPET, Timer Resolution và đặt lại Winsock/IP.
-
-Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy đo FPS, 1% Low, 0.1% Low và Frame Time trước khi quyết định sử dụng lâu dài.
-
-## 🧩 Lựa chọn bổ sung
-
-- Gỡ OneDrive.
-- Gỡ Xbox và Game Bar.
-- Tắt Windows Search.
-- Tắt Bluetooth.
-- Tắt dịch vụ in và quét tài liệu.
-- Tắt cảm ứng, bút và máy tính bảng.
-- Cài một trình duyệt được chọn.
-
-Chỉ tắt nhóm phần cứng khi máy không sử dụng thiết bị tương ứng.
-
-## 📦 Gaming Runtime
-
-Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua; thành phần còn thiếu chỉ được cài từ nguồn Microsoft có chữ ký hợp lệ.
-
-> [!NOTE]
-> Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, Runtime sẽ được ghi là `Unavailable` hoặc `SkippedNoSource`. Playbook vẫn tiếp tục và không báo cài thành công giả.
-
-## 📖 Cài đặt
-
-> [!CAUTION]
-> Hãy sao lưu dữ liệu quan trọng hoặc tạo Snapshot trước khi chạy. Không tắt máy, thoát AME Wizard hoặc chạy thêm công cụ tối ưu trong lúc Playbook đang áp dụng.
-
-1. Tải tệp `.apbx` mới nhất từ **Releases**.
-2. Mở **AME Wizard**, sau đó kéo thả tệp `.apbx` vào cửa sổ ứng dụng.
-3. Chọn **Standard** hoặc **Performance** cùng các mục cần dùng.
-4. Xác nhận và chờ Playbook hoàn tất.
-5. Khởi động lại Windows, chờ 10–15 phút rồi mới đo Process, RAM và hiệu năng.
-
-## ⚠️ Lưu ý
-
-- Không chạy đồng thời Windows Update, DISM, trình cài Driver hoặc công cụ tối ưu khác.
-- Một số thay đổi chỉ có hiệu lực sau khi khởi động lại.
-- Winsock và IP chỉ được đặt lại trong chế độ Performance.
-- Số Process, RAM và hiệu năng phụ thuộc phần cứng, Driver, Edition và phần mềm đang cài.
-- Nên thử trên máy ảo hoặc Windows mới trước khi dùng trên máy chính.
-
-## 🛠️ Báo lỗi
-
-> [!TIP]
-> Gửi Log đầy đủ sẽ giúp xác định đúng Action gây lỗi. Không cắt riêng dòng cuối vì thường thiếu nguyên nhân ban đầu.
-
-Khi tạo Issue, hãy gửi:
-
-- Phiên bản, Edition và Build Windows.
-- Chế độ đã chọn và các Checkbox đã đánh dấu.
-- Toàn bộ Log của AME Wizard.
-- Báo cáo Post-boot nếu lỗi liên quan đến Process, RAM hoặc dịch vụ.
-- Cấu hình phần cứng chính và thông tin máy thật hoặc máy ảo.
-
-Không đăng mật khẩu, Token, khóa sản phẩm hoặc thông tin cá nhân lên Issue công khai.
 
 ---
 
-<p align="center">
-  <strong>SuperStrike X1</strong><br>
-  Build for performance by StrikeOS.
-</p>
+## ⚠️ Lưu ý quan trọng (Disclaimer)
+
+> [!WARNING]
+> Playbook can thiệp sâu vào cấu hình hệ thống Windows. Mặc dù SuperStrike X1 được thiết kế với tiêu chuẩn tương thích và an toàn cao, bạn **bắt buộc phải tạo Điểm khôi phục (Restore Point) hoặc Bản sao lưu hệ thống (System Image)** trước khi sử dụng.
+>
+> - **Không khuyến nghị:** Sử dụng trên máy chủ, môi trường làm việc doanh nghiệp cần tuân thủ chính sách bảo mật riêng (Domain/MDM).
+> - **Không cam kết:** "Nhân đôi FPS". Hiệu năng thực tế tập trung vào **độ ổn định Frame Time (1% Low, 0.1% Low)** và **giảm DPC Latency/Input Lag**.
+
+---
+
+## 🎮 Giới thiệu SuperStrike X1
+
+**SuperStrike X1** là Playbook tùy biến và tối ưu hóa Windows dành riêng cho game thủ thi đấu (Competitive Gaming), được xây dựng trên nền tảng **AME Wizard**. 
+
+Khác với các bản ISO cài sẵn (Ghost/Mod) tiềm ẩn rủi ro hoặc các script tối ưu cực đoan làm hỏng hệ thống, SuperStrike X1:
+1. **Áp dụng trực tiếp:** Tối ưu ngay trên bản Windows chính chủ đang dùng mà không cần cài lại Win.
+2. **Bảo tồn bảo mật cốt lõi:** Giữ nguyên **Windows Defender**, Firewall, DEP, TPM 2.0 và Secure Boot.
+3. **Anti-Cheat Whitelist:** Bảo toàn 100% dịch vụ và file driver cần thiết cho **Riot Vanguard, Easy Anti-Cheat (EAC), BattlEye, Valve Anti-Cheat (VAC) và EA AntiCheat**.
+4. **Không phần mềm rác:** Không nhồi nhét Toolbox, không quảng cáo, mã nguồn Playbook hoàn toàn minh bạch (Open YAML).
+
+---
+
+## 🪟 Khả năng tương thích
+
+| Hệ điều hành | Phiên bản | Build hỗ trợ | Trạng thái |
+|---|:---:|:---:|:---:|
+| **Windows 10 64-bit** | 22H2 | `19045` | ✅ Tương thích chính thức |
+| **Windows 11 64-bit** | 24H2 | `26100` | ✅ Tương thích chính thức |
+| **Windows 11 64-bit** | 25H2 | `26200` | ✅ Thử nghiệm & Hỗ trợ |
+
+> [!NOTE]
+> Để tránh xung đột hệ thống, Playbook sẽ **tự động từ chối chạy** trên các bản Build không nằm trong danh sách kiểm thử trên.
+
+---
+
+## ⚙️ Các chế độ cấu hình
+
+Trong giao diện AME Wizard, bạn có thể lựa chọn 1 trong 2 chế độ phù hợp với nhu cầu:
+
+### 🛡️ Chế độ Standard (Khuyến nghị cho số đông)
+- Cân bằng hoàn hảo giữa tính ổn định, độ trễ và sự tiện lợi hàng ngày.
+- Gỡ bỏ Bloatware, ứng dụng UWP rác, vô hiệu hóa Telemetry (theo dõi ngầm) và Diagnostics.
+- Tắt các dịch vụ chạy ngầm vô bổ, giữ nguyên các tính năng in ấn, Bluetooth và tìm kiếm cơ bản.
+- Phù hợp với mọi máy tính vừa dùng làm việc, vừa chơi game.
+
+### 🚀 Chế độ Performance (Dành cho máy thuần Gaming)
+- Bao gồm toàn bộ tối ưu của **Standard**.
+- **Mạng & Bộ đệm:** TCP Auto-Tuning, RSS (Receive Side Scaling), NetDMA, tinh chỉnh Network Adapter và thiết lập lại Winsock/IP Stack.
+- **Phần cứng & Nhân hệ thống:** Bật MSI Mode cho GPU/Network, thiết lập Power Plan tùy chỉnh, Core Parking off, Timer Resolution tối ưu và kích hoạt TRIM cho SSD.
+- **Đồ họa:** Đồng bộ HAGS (Hardware-Accelerated GPU Scheduling) và tối ưu hóa Game DVR.
+
+> [!TIP]
+> Chế độ **Performance** sẽ đặt lại cấu hình IP/Winsock. Nếu bạn đang cài **IP tĩnh hoặc DNS tùy chỉnh**, hãy lưu lại thông tin để thiết lập lại sau khi máy khởi động.
+
+---
+
+## 🧩 Tùy chọn bổ sung (Optional Components)
+
+Trước khi bấm chạy, bạn có thể tùy ý chọn bật/tắt các thành phần:
+
+- [ ] **Gỡ OneDrive hoàn toàn:** Tự động di chuyển dữ liệu cá nhân (Desktop, Documents, Pictures) về thư mục cục bộ an toàn trước khi gỡ.
+- [ ] **Gỡ bỏ Xbox & Game Bar:** Dành cho game thủ không dùng Xbox App / Cloud Gaming.
+- [ ] **Tắt Windows Search Indexing:** Giảm tải đọc/ghi ổ cứng (chức năng tìm kiếm tên file vẫn hoạt động bình thường).
+- [ ] **Vô hiệu hóa Bluetooth:** Dành cho máy PC để bàn không có card Bluetooth.
+- [ ] **Vô hiệu hóa Print & Fax Spooler:** Tắt toàn bộ tiến trình liên quan đến in ấn/quét tài liệu.
+- [ ] **Cài đặt trình duyệt ưa thích:** Tùy chọn cài sạch **Brave**, **Firefox** hoặc **Google Chrome**.
+
+---
+
+## 📦 Gaming Runtimes
+
+Playbook tự động quét và chuẩn đoán các thư viện game cần thiết. Thành phần nào đã có sẽ được giữ nguyên; thành phần thiếu sẽ được tải và cài đặt trực tiếp từ **máy chủ Microsoft (có chữ ký số hợp lệ)**:
+
+- **Visual C++ Redistributable (2015–2022)** cả x86 và x64.
+- **DirectX End-User Runtimes (Legacy 9.0c / June 2010)**.
+- **.NET Framework 3.5 / 4.8**.
+
+*Ghi chú: Nếu hệ thống không có mạng hoặc nguồn tải Microsoft gặp sự cố, Playbook sẽ đánh dấu `SkippedNoSource` và tiếp tục quá trình mà không tạo báo cáo thành công giả.*
+
+---
+
+## 🔍 Chi tiết các dịch vụ được tối ưu
+
+SuperStrike X1 tắt bỏ các tiến trình và dịch vụ nền không có tác dụng trong quá trình chơi game nhằm giải phóng CPU cycle và RAM.
+
+<details>
+<summary>👉 <strong>Nhấn vào đây để xem danh sách dịch vụ bị vô hiệu hóa</strong></summary>
+
+| Tên Dịch vụ (Service) | Mục đích / Lý do vô hiệu hóa |
+| :--- | :--- |
+| **DiagTrack** (Connected User Experiences) | Dịch vụ thu thập Telemetry và gửi dữ liệu chẩn đoán về Microsoft. |
+| **dmwappushservice** | Kênh gửi dữ liệu WAP Push telemetry. |
+| **DPS / WdiServiceHost / WdiSystemHost** | Hệ thống chẩn đoán Diagnostic Policy Service chạy ngầm định kỳ. |
+| **SysMain** (Superfetch) | Tự động cache ứng dụng vào RAM; thường gây nghẽn I/O trên SSD khi chơi game. |
+| **MapsBroker** | Dịch vụ tải và đồng bộ bản đồ ngoại tuyến của Windows. |
+| **RetailDemo** | Dịch vụ demo gian hàng bán lẻ (hoàn toàn vô dụng). |
+| **RemoteRegistry** | Cho phép chỉnh sửa Registry từ xa (vừa tốn tài nguyên, vừa là lỗ hổng bảo mật). |
+| **SensrSvc / SensorDataService** | Nhận diện cảm biến xoay màn hình (không cần thiết trên Desktop PC). |
+| **WSearch** *(Tùy chọn)* | Dịch vụ lập chỉ mục tệp (Indexing); tắt để giải phóng I/O đĩa. |
+| **Print Spooler** *(Tùy chọn)* | Hàng đợi in ấn; tắt nếu máy không kết nối máy in. |
+| **bthserv / BTAGService** *(Tùy chọn)* | Dịch vụ kết nối Bluetooth; chỉ tắt khi người dùng chọn tắt Bluetooth. |
+
+</details>
+
+---
+
+## 📖 Hướng dẫn cài đặt
+
+### Checklist chuẩn bị
+1. Đảm bảo Windows **không còn bản cập nhật nào đang chờ khởi động lại** (Pending Update).
+2. Tạm thời tắt **Tamper Protection** trong *Windows Security > Virus & threat protection settings* (Bắt buộc để AME Wizard có quyền ghi Registry hệ thống).
+3. Tạo một **Điểm khôi phục (System Restore Point)** hoặc Backup dữ liệu quan trọng.
+4. Cắm sạc nguồn đầy đủ (đối với laptop).
+
+### Các bước thực hiện
+
+```mermaid
+graph LR
+A[Tải AME Wizard] --> B[Tải SuperStrike.apbx]
+B --> C[Kéo thả vào Wizard]
+C --> D[Chọn Standard / Performance]
+D --> E[Khởi động lại máy]
