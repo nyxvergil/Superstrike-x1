@@ -76,14 +76,14 @@ Cảm ơn mọi người đã dành thời gian dùng thử và góp ý.
 
 ## ⚙️ Các chế độ cấu hình
 
-### 🛡️ Standard — Cấu hình mặc định
+### Standard - Cấu hình mặc định
 
 - Gỡ ứng dụng theo danh sách, giảm Telemetry và điều chỉnh dịch vụ, tác vụ nền.
 - Áp dụng thiết lập hiệu năng của Gaming Lean, gồm bộ nhớ, ưu tiên foreground, FTH và BCD/timer.
 - Điều chỉnh Game DVR và các thiết lập giao diện.
 - Bluetooth và in ấn chỉ bị tắt khi chọn tùy chọn tương ứng. Windows Search được tích tắt sẵn; hãy bỏ chọn nếu còn dùng.
 
-### 🚀 Performance — Thêm thiết lập mạng và phần cứng
+### Performance - Thêm thiết lập mạng và phần cứng
 
 - Bao gồm các thay đổi của **Standard**.
 - **Mạng:** Bật RSS, đặt TCP Auto-Tuning về `normal`, tắt RSC và chỉnh một số thuộc tính Card mạng khi có hỗ trợ. Reset Winsock/IP và xóa DNS cache.
@@ -121,44 +121,69 @@ Playbook tự động quét và chuẩn đoán các thư viện game cần thi�
 
 ---
 
-## 🔍 Chi tiết các dịch vụ được tối ưu
+## 🔍 Các dịch vụ được điều chỉnh
 
-SuperStrike X1 tắt bỏ các tiến trình và dịch vụ nền không có tác dụng trong quá trình chơi game nhằm giải phóng CPU cycle và RAM.
+SuperStrike X1 đặt một số dịch vụ về trạng thái Disabled để giảm hoạt động nền. Các nhóm cơ bản được áp dụng trong cả Standard và Performance; nhóm tùy chọn phụ thuộc lựa chọn khi cài.
 
 <details>
-<summary>👉 <strong>Nhấn vào đây để xem danh sách dịch vụ bị vô hiệu hóa</strong></summary>
+<summary>👉 <strong>Xem các dịch vụ tiêu biểu và chức năng bị ảnh hưởng</strong></summary>
 
-| Tên Dịch vụ (Service) | Mục đích / Lý do vô hiệu hóa |
-| :--- | :--- |
-| **DiagTrack** (Connected User Experiences) | Dịch vụ thu thập Telemetry và gửi dữ liệu chẩn đoán về Microsoft. |
-| **dmwappushservice** | Kênh gửi dữ liệu WAP Push telemetry. |
-| **DPS / WdiServiceHost / WdiSystemHost** | Hệ thống chẩn đoán Diagnostic Policy Service chạy ngầm định kỳ. |
-| **SysMain** (Superfetch) | Tự động cache ứng dụng vào RAM; thường gây nghẽn I/O trên SSD khi chơi game. |
-| **MapsBroker** | Dịch vụ tải và đồng bộ bản đồ ngoại tuyến của Windows. |
-| **RetailDemo** | Dịch vụ demo gian hàng bán lẻ (hoàn toàn vô dụng). |
-| **RemoteRegistry** | Cho phép chỉnh sửa Registry từ xa (vừa tốn tài nguyên, vừa là lỗ hổng bảo mật). |
-| **SensrSvc / SensorDataService** | Nhận diện cảm biến xoay màn hình (không cần thiết trên Desktop PC). |
-| **WSearch** *(Tùy chọn)* | Dịch vụ lập chỉ mục tệp (Indexing); tắt để giải phóng I/O đĩa. |
-| **Print Spooler** *(Tùy chọn)* | Hàng đợi in ấn; tắt nếu máy không kết nối máy in. |
-| **bthserv / BTAGService** *(Tùy chọn)* | Dịch vụ kết nối Bluetooth; chỉ tắt khi người dùng chọn tắt Bluetooth. |
+| Dịch vụ | Chức năng liên quan | Điều kiện |
+|:---|:---|:---|
+| **DiagTrack** | Thu thập dữ liệu chẩn đoán Windows. | Cấu hình chung |
+| **dmwappushservice** | Định tuyến thông điệp WAP Push phục vụ quản lý thiết bị. | Cấu hình chung |
+| **DPS / diagsvc** | Chẩn đoán và phát hiện sự cố hệ thống. | Cấu hình chung |
+| **SysMain** | Tối ưu việc tải ứng dụng dựa trên thói quen sử dụng. | Cấu hình chung |
+| **MapsBroker** | Quản lý bản đồ tải xuống. | Cấu hình chung |
+| **RetailDemo** | Chế độ trình diễn tại cửa hàng. | Cấu hình chung |
+| **RemoteRegistry** | Cho phép chỉnh sửa Registry từ xa. | Cấu hình chung |
+| **WerSvc / wercplsupport** | Báo cáo lỗi và hỗ trợ xem, gửi báo cáo sự cố. | Cấu hình chung |
+| **OneSyncSvc** | Đồng bộ thư, danh bạ, lịch và dữ liệu liên quan; chỉnh qua mẫu dịch vụ người dùng. | Cấu hình chung |
+| **WpnService / WpnUserService** | Thông báo đẩy của Windows và ứng dụng. | Cấu hình chung |
+| **WSearch** | Lập chỉ mục phục vụ tìm kiếm. | Khi chọn tắt Search — tích sẵn |
+| **XblAuthManager / XblGameSave / XboxNetApiSvc / XboxGipSvc / GamingServices / GamingServicesNet** | Các chức năng Xbox và Gaming Services. | Khi chọn gỡ Xbox — tích sẵn |
+| **Spooler / PrintNotify / StiSvc** | In ấn, thông báo in và thu nhận ảnh từ thiết bị như máy quét. | Khi chọn tắt in và quét |
+| **bthserv / BTAGService / BthAvctpSvc** | Kết nối và các chức năng âm thanh, điều khiển Bluetooth. | Khi chọn tắt Bluetooth |
+| **TabletInputService** | Chức năng nhập liệu cảm ứng và bút trên Windows có dịch vụ này. | Khi chọn tắt cảm ứng và bút |
+
+Đây là danh sách tiêu biểu. Dịch vụ thực tế phụ thuộc Build, Edition và thành phần đang cài.
+
+Playbook không ép dừng các dịch vụ này ngay trong lúc AME Wizard chạy. Cần khởi động lại để các thay đổi có hiệu lực đầy đủ.
+
+> [!NOTE]
+> Việc tắt dịch vụ có thể làm mất chức năng tương ứng và không bảo đảm tăng FPS hoặc giảm RAM trên mọi máy. OneSyncSvc bị tắt trong cấu hình chung, không phụ thuộc tùy chọn gỡ OneDrive.
 
 </details>
-
 ---
 
 ## 📖 Hướng dẫn cài đặt
 
-### Checklist chuẩn bị
-1. Đảm bảo Windows **không còn bản cập nhật nào đang chờ khởi động lại** (Pending Update).
-2. Tạm thời tắt **Tamper Protection** trong *Windows Security > Virus & threat protection settings* (Bắt buộc để AME Wizard có quyền ghi Registry hệ thống).
-3. Tạo một **Điểm khôi phục (System Restore Point)** hoặc Backup dữ liệu quan trọng.
-4. Cắm sạc nguồn đầy đủ (đối với laptop).
+### Chuẩn bị
+
+1. Kiểm tra Windows thuộc danh sách Build được hỗ trợ. Hoàn tất các cập nhật đang chạy và khởi động lại nếu Windows yêu cầu.
+2. Sao lưu hệ thống và dữ liệu quan trọng; tạo Snapshot nếu dùng máy ảo. Restore Point chỉ là biện pháp bổ sung.
+3. Chuẩn bị kết nối Internet, tài khoản có quyền quản trị và cắm sạc nếu dùng Laptop.
+4. Đóng các công cụ tối ưu khác. Không chạy đồng thời Windows Update, DISM hoặc trình cài Driver.
+
+Không cần chủ động tắt Tamper Protection theo hướng dẫn của Playbook này.
 
 ### Các bước thực hiện
 
+1. Tải **AME Wizard** từ nguồn chính thức.
+2. Tải **SuperStrike `.apbx`** từ Releases được liên kết trên [strikeos.site](https://strikeos.site). Kiểm tra SHA256 nếu có công bố.
+3. Mở AME Wizard và kéo thả tệp `.apbx` vào ứng dụng.
+4. Chọn **Standard** hoặc **Performance**, kiểm tra lại các tùy chọn tích sẵn.
+5. Bắt đầu áp dụng, chờ AME Wizard hoàn tất rồi khởi động lại Windows.
+
 ```mermaid
 graph LR
-A[Tải AME Wizard] --> B[Tải SuperStrike.apbx]
-B --> C[Kéo thả vào Wizard]
-C --> D[Chọn Standard / Performance]
-D --> E[Khởi động lại máy]
+A[Tải Wizard và Playbook] --> B[Mở APBX]
+B --> C[Chọn chế độ và tùy chọn]
+C --> D[Chạy và chờ hoàn tất]
+D --> E[Khởi động lại]
+```
+
+> [!NOTE]
+> OneDrive, Xbox/Game Bar và Windows Search được tích sẵn để gỡ hoặc tắt. Bỏ chọn nếu còn dùng. Với Performance, lưu lại IP/DNS tùy chỉnh trước khi chạy.
+
+Nếu Playbook dừng do lỗi, lưu Log để báo qua Discord trước khi thử chạy lại. Sau khi hoàn tất và khởi động lại, chờ khoảng 10–15 phút trước khi đo Process, RAM và hiệu năng.
