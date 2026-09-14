@@ -38,8 +38,9 @@
 ## ⚠️ Lưu ý quan trọng (Disclaimer)
 
 > [!WARNING]
-> Playbook can thiệp sâu vào Windows. Mặc dù SuperStrike X1 được thiết kế với tiêu chuẩn tương thích và an toàn cao, bạn **bắt buộc phải tạo Điểm khôi phục (Restore Point) hoặc Bản sao lưu hệ thống (System Image)** trước khi sử dụng.
+> Playbook thay đổi sâu vào Windows. Hãy tạo **bản sao lưu hệ thống và dữ liệu quan trọng** trước khi sử dụng. Restore Point chỉ là biện pháp bổ sung, không thay thế bản sao lưu đầy đủ.
 >
+> - **Việc sử dụng Playbook** là quyết định tự nguyện của bạn. Hãy đọc kỹ các thay đổi, cân nhắc rủi ro và sao lưu trước khi chạy. Quyết định này không làm mất các quyền hợp pháp của bạn hoặc miễn trừ trách nhiệm của bên phát triển theo pháp luật áp dụng.
 > - **Không khuyến nghị:** Sử dụng trên máy chủ, máy làm việc quan trọng, thiết bị thuộc Domain/MDM khi chưa được quản trị viên cho phép, hoặc Windows đã qua can thiệp bằng công cụ khác. Không chạy khi chưa có bản sao lưu hay sử dụng tệp từ nguồn không xác minh được.
 > - **Hiệu năng và tương thích:** Không cam kết mức FPS, độ trễ, RAM, số Process cố định hoặc tương thích với mọi Driver, game và Anti-cheat. Giữ lại dịch vụ bảo mật không đồng nghĩa được bên thứ ba chứng nhận.
 > -  **Hỗ trợ và cập nhật:** Tiếp nhận lỗi qua Discord theo khả năng duy trì dự án, không cam kết thời gian xử lý hay lịch cập nhật. Đọc hướng dẫn Release trước khi chạy chồng phiên bản. Dịch vụ trả phí tuân theo thỏa thuận riêng.
