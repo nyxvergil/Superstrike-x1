@@ -47,8 +47,6 @@
 
 ## 🎮 Giới thiệu SuperStrike X1
 
-## 🎮 Giới thiệu
-
 Chào mọi người, **SuperStrike X1** là sản phẩm đầu tiên mình đóng gói và phát hành sau một thời gian dài tự mày mò, nghiên cứu về cách Windows điều phối tài nguyên và tối ưu độ trễ cho game.
 
 Dự án ra đời với một tiêu chí rất rõ ràng: **Tinh gọn vừa đủ để mượt, nhưng tuyệt đối không phá hỏng hệ thống hay làm hỏng Anti-cheat**. 
