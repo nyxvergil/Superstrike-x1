@@ -47,13 +47,17 @@
 
 ## 🎮 Giới thiệu SuperStrike X1
 
-**SuperStrike X1** là Playbook tùy biến và tối ưu hóa Windows dành riêng cho game thủ thi đấu (Competitive Gaming), được xây dựng trên nền tảng **AME Wizard**. 
+## 🎮 Giới thiệu
 
-Khác với các bản ISO cài sẵn (Ghost/Mod) tiềm ẩn rủi ro hoặc các script tối ưu cực đoan làm hỏng hệ thống, SuperStrike X1:
-1. **Áp dụng trực tiếp:** Tối ưu ngay trên bản Windows chính chủ đang dùng mà không cần cài lại Win.
-2. **Bảo tồn bảo mật cốt lõi:** Giữ nguyên **Windows Defender**, Firewall, DEP, TPM 2.0 và Secure Boot.
-3. **Anti-Cheat Whitelist:** Bảo toàn 100% dịch vụ và file driver cần thiết cho **Riot Vanguard, Easy Anti-Cheat (EAC), BattlEye, Valve Anti-Cheat (VAC) và EA AntiCheat**.
-4. **Không phần mềm rác:** Không nhồi nhét Toolbox, không quảng cáo, mã nguồn Playbook hoàn toàn minh bạch (Open YAML).
+Chào mọi người, **SuperStrike X1** là sản phẩm đầu tiên mình đóng gói và phát hành sau một thời gian dài tự mày mò, nghiên cứu về cách Windows điều phối tài nguyên và tối ưu độ trễ cho game.
+
+Dự án ra đời với một tiêu chí rất rõ ràng: **Tinh gọn vừa đủ để mượt, nhưng tuyệt đối không phá hỏng hệ thống hay làm hỏng Anti-cheat**. 
+
+Là dự án đầu tay, mình biết sản phẩm chắc chắn sẽ còn những "hạt sạn", lỗi vặt hoặc chưa thể làm hài lòng tất cả mọi cấu hình máy. Vì vậy:
+- Mình luôn trân trọng mọi góp ý thẳng thắn, dù là khen hay chê.
+- Mình sẽ liên tục học hỏi, tinh chỉnh và update các tính năng thực sự cần thiết trong tương lai dựa trên phản hồi thực tế của các bạn.
+
+Nếu trong quá trình trải nghiệm có phát sinh lỗi hoặc bạn có ý tưởng tối ưu nào hay, hãy hú mình qua [Discord](https://discord.gg/strikeos) hoặc tạo [Issue](../../issues) nhé. Rất mong nhận được sự đồng hành và đóng góp từ cộng đồng!
 
 ---
 
