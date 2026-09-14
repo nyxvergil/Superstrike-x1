@@ -6,133 +6,142 @@
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/VERSION-2.0.17-5B21FF?style=for-the-badge">
-  <img alt="Windows" src="https://img.shields.io/badge/WINDOWS-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
+  <img alt="Windows" src="https://img.shields.io/badge/WINDOWS-10%20%7C%2011-0078D4?style=for-the-badge">
   <img alt="AME Playbook" src="https://img.shields.io/badge/AME-PLAYBOOK-202020?style=for-the-badge">
-  <img alt="Defender retained" src="https://img.shields.io/badge/DEFENDER-RETAINED-16A34A?style=for-the-badge&logo=windowsdefender&logoColor=white">
-  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-4B5563?style=for-the-badge"></a>
+  <img alt="Architecture" src="https://img.shields.io/badge/ARCH-x64-6D28D9?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img alt="Supported builds" src="https://img.shields.io/badge/BUILD-19045%20%7C%2026100%20%7C%2026200-2563EB?style=flat-square">
-  <img alt="Architecture" src="https://img.shields.io/badge/ARCH-x64-6D28D9?style=flat-square">
-  <img alt="Profiles" src="https://img.shields.io/badge/PROFILE-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
+  <strong>Tinh gọn Windows cho máy chơi game.</strong>
 </p>
-
-<p align="center"><strong>Debloat để chơi game. Giữ lại những gì Windows và Anti-cheat thực sự cần.</strong></p>
 
 <p align="center">
   <a href="https://strikeos.site">🌐 Website</a>
-  •
+  ·
   <a href="https://discord.gg/strikeos">💬 Discord</a>
-  •
-  <a href="#-cài-đặt">📖 Cài đặt</a>
-  •
-  <a href="#-báo-lỗi">🛠️ Báo lỗi</a>
 </p>
 
-## 🎮 Giới thiệu
+## 🎮 SuperStrike X1 là gì?
 
-SuperStrike X1 là Playbook tối ưu Windows dành cho Gamming. Dự án tập trung giảm Background Process, cải thiện Latency, giữ Frame Time ổn định và hạn chế ảnh hưởng đến FPS, 1% Low và 0.1% Low.
+SuperStrike X1 là Playbook chạy bằng AME Wizard, áp dụng các thay đổi trực tiếp lên Windows đang dùng. Bạn không cần cài lại Windows để sử dụng.
 
-Playbook áp dụng trực tiếp trên Windows đang sử dụng, Và chỉ hỗ trợ Các phiên bản window dưới đây. 
+Tôi làm dự án này để giảm những thứ chạy nền không cần đến trên máy chơi game. Mục tiêu là bớt hoạt động nền và cải thiện độ phản hồi, có theo dõi FPS, 1% Low, 0.1% Low và Frame Time khi kiểm thử.
 
-## 🪟 Hệ điều hành hỗ trợ
+Process thấp là một chỉ số để theo dõi. Nó không tự chứng minh rằng game sẽ chạy nhanh hơn. Tôi cũng không đặt ra một con số FPS hay mức RAM mà mọi máy đều phải đạt.
+
+## 🪟 Windows được hỗ trợ
 
 | Hệ điều hành | Phiên bản | Build |
-|---|---:|---:|
-| Windows 10 64-bit | 22H2 | `19045` |
-| Windows 11 64-bit | 24H2 | `26100` |
-| Windows 11 64-bit | 25H2 | `26200` |
+|---|---|---|
+| Windows 10 x64 | 22H2 | `19045` |
+| Windows 11 x64 | 24H2 | `26100` |
+| Windows 11 x64 | 25H2 | `26200` |
 
-Build ngoài danh sách sẽ bị từ chối để tránh áp dụng sai Cài đặt.
+Playbook kiểm tra Build trước khi chạy. Các Build ngoài danh sách sẽ bị từ chối.
 
-## ✨ Điểm chính
+Danh sách hỗ trợ không có nghĩa mọi Edition, Driver và cấu hình phần cứng đều đã được kiểm thử.
 
-- Tinh gọn ứng dụng, dịch vụ và tác vụ nền không cần thiết.
-- Giảm hoạt động thu thập dữ liệu và nội dung quảng bá của Windows.
-- Tối ưu phản hồi hệ thống, mạng, nguồn điện và phần cứng.
-- Giữ Windows Defender, Firewall, DEP, Secure Boot và các thành phần bảo mật cốt lõi.
-- Không vô hiệu hóa dịch vụ của Vanguard, Easy Anti-Cheat, BattlEye hoặc EA AntiCheat.
-- Không kèm Toolbox, phần mềm quảng cáo hoặc gói Post-install.
-- không cung cấp bản quyền và không bẻ khóa (crack/pre-activated). Khách hàng tự chịu trách nhiệm pháp lý về giấy phép/key bản quyền sử dụng trên máy.
-- Hỗ trợ cài Brave, Firefox hoặc Chrome theo lựa chọn.
+## 🔧 Playbook thay đổi những gì?
 
-## ⚙️ Chế độ
+- Gỡ bớt ứng dụng và thành phần Windows không cần dùng.
+- Điều chỉnh dịch vụ và Scheduled Task để giảm hoạt động nền.
+- Giảm thu thập dữ liệu, quảng cáo và nội dung đề xuất của Windows.
+- Điều chỉnh một số thiết lập hệ thống, mạng, nguồn điện và phần cứng.
+- Kiểm tra và cài Runtime còn thiếu.
+- Cài Brave, Firefox hoặc Chrome nếu bạn chọn.
 
-### 🛡️ Standard
+Windows Defender và Firewall được giữ lại. Playbook không chủ động vô hiệu hóa dịch vụ của Vanguard, Easy Anti-Cheat, BattlEye hoặc EA AntiCheat.
 
-Cấu hình mặc định, cân bằng giữa tinh gọn, ổn định và tương thích. Phù hợp với phần lớn PC Deskstop Và Laptop ( Notebook ).
+Điều đó không phải cam kết tương thích với mọi game hay mọi bản cập nhật Anti-cheat. Nếu gặp lỗi, hãy gửi Log kèm tên game và cấu hình máy.
 
-### 🚀 Performance
+## ⚙️ Standard và Performance
 
-Bao gồm Standard và bổ sung TRIM, RSS, TCP Auto-Tuning, thiết lập Card mạng, Power Plan, Core Parking, HAGS, MSI Mode, HPET, Timer Resolution và đặt lại Winsock/IP.
+| Chế độ | Nội dung |
+|---|---|
+| **Standard** | Các thay đổi cơ bản về Debloat và hoạt động nền. Đây là chế độ tôi chọn làm mặc định. |
+| **Performance** | Bao gồm Standard, thêm các thiết lập về mạng, nguồn điện và phần cứng được liệt kê bên dưới. |
 
-Performance có thể cho kết quả khác nhau trên từng cấu hình. Hãy Kiểm Tra FPS, 1% Low, 0.1% Low và Frame Time trước khi quyết định sử dụng lâu dài.
+Performance có thêm TRIM, RSS, TCP Auto-Tuning, thiết lập Card mạng, Power Plan, Core Parking, HAGS, MSI Mode, HPET, Timer Resolution và đặt lại Winsock/IP. Một số mục phụ thuộc vào phần cứng và trạng thái hệ thống.
 
-## 🧩 Lựa chọn bổ sung
+> [!WARNING]
+> Performance không mặc nhiên nhanh hơn Standard. Các thay đổi về HPET, Timer, nguồn điện hoặc mạng có thể cho kết quả ngược lại trên một số máy. Chế độ này có sử dụng tiện ích Timer Resolution chạy nền và đặt lại cấu hình Winsock/IP.
+
+Nếu chọn Performance, hãy đo cùng một game, cùng thiết lập và cùng điều kiện trước và sau khi áp dụng. Tôi ưu tiên kết quả đo thực tế hơn số lượng Tweak đã bật.
+
+## 🧩 Các mục có thể chọn
 
 - Gỡ OneDrive.
 - Gỡ Xbox và Game Bar.
-- Tắt Windows Search.
-- Tắt Bluetooth.
+- Tắt Windows Search indexing.
+- Tắt dịch vụ Bluetooth.
 - Tắt dịch vụ in và quét tài liệu.
-- Tắt cảm ứng, bút và máy tính bảng.
-- Cài một trình duyệt được chọn.
+- Tắt dịch vụ cảm ứng, bút và máy tính bảng.
+- Cài một trình duyệt.
 
-Chỉ tắt nhóm phần cứng khi máy không sử dụng thiết bị tương ứng.
+Đọc từng mục trước khi chọn. Nếu còn dùng Bluetooth, máy in, cảm ứng hoặc Xbox/Game Bar, hãy giữ lại chức năng đó. Sao lưu những tệp OneDrive cần dùng về máy trước khi gỡ.
 
-## 📦 Gaming Runtime
+## 📦 Runtime
 
-Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua; thành phần còn thiếu chỉ được cài từ nguồn Microsoft có chữ ký hợp lệ.
+Playbook kiểm tra các thành phần sau:
+
+- Visual C++ 2015–2022 x86 và x64.
+- DirectX Legacy.
+- .NET Framework 3.5.
+
+Thành phần đã có sẽ được bỏ qua. Thành phần còn thiếu được cài khi có nguồn phù hợp.
 
 > [!NOTE]
-> Nếu nguồn tải, TLS hoặc `sources\sxs` không khả dụng, Runtime sẽ được ghi là `Unavailable` hoặc `SkippedNoSource`. Playbook vẫn tiếp tục và không báo cài thành công giả.
+> Nếu không tải được hoặc thiếu nguồn cài đặt, Log sẽ ghi `Unavailable` hoặc `SkippedNoSource`. Playbook có thể tiếp tục, nhưng Runtime đó vẫn chưa được cài. Hãy kiểm tra Log nếu game còn báo thiếu thư viện.
 
 ## 📖 Cài đặt
 
+Bạn cần Windows thuộc danh sách hỗ trợ, tài khoản quản trị viên, AME Wizard và kết nối Internet. Nếu dùng Laptop, hãy cắm sạc.
+
 > [!CAUTION]
-> Hãy sao lưu dữ liệu quan trọng hoặc tạo Snapshot trước khi chạy. Không tắt máy, thoát AME Wizard hoặc chạy thêm công cụ tối ưu trong lúc Playbook đang áp dụng.
+> Sao lưu trước khi chạy. Với máy ảo, hãy tạo Snapshot. Với máy thật, bản sao lưu hệ thống sẽ hữu ích khi cần quay lại trạng thái trước đó.
 
-1. Tải tệp `.apbx` mới nhất từ **Releases**.
-2. Mở **AME Wizard**, sau đó kéo thả tệp `.apbx` vào cửa sổ ứng dụng.
-3. Chọn **Standard** hoặc **Performance** cùng các mục cần dùng.
-4. Xác nhận và chờ Playbook hoàn tất.
-5. Khởi động lại Windows, chờ 10–15 phút rồi mới đo Process, RAM và hiệu năng.
+1. Tải tệp `.apbx` trong mục **Releases** của repository này.
+2. Mở AME Wizard và kéo thả tệp vào cửa sổ ứng dụng.
+3. Chọn Standard hoặc Performance, sau đó chọn những chức năng bạn muốn gỡ hoặc tắt.
+4. Làm theo hướng dẫn và chờ quá trình hoàn tất.
+5. Khởi động lại Windows.
 
-## ⚠️ Lưu ý
+Trong lúc chạy, không mở thêm công cụ tối ưu, trình cài Driver, DISM hoặc Windows Update. Không tắt máy giữa chừng.
 
-- Không chạy đồng thời Windows Update, DISM, trình cài Driver hoặc công cụ tối ưu khác.
-- Một số thay đổi chỉ có hiệu lực sau khi khởi động lại.
-- Winsock và IP chỉ được đặt lại trong chế độ Performance.
-- Số Process, RAM và hiệu năng phụ thuộc phần cứng, Driver, Edition và phần mềm đang cài.
-- Nên thử trên máy ảo hoặc Windows mới trước khi dùng trên máy chính.
+Sau khi khởi động lại, chờ khoảng 10–15 phút để các tác vụ sau khởi động ổn định rồi hãy đo Process, RAM và hiệu năng.
+
+## ↩️ Quay lại cấu hình cũ
+
+Hiện không có nút hoàn tác toàn bộ Playbook.
+
+Một số thiết lập có thể chỉnh lại, nhưng ứng dụng hoặc thành phần đã gỡ có thể cần cài lại từ nguồn Windows. Nếu muốn trở về đúng trạng thái trước khi chạy, hãy khôi phục bản sao lưu hệ thống hoặc Snapshot đã tạo.
 
 ## 🛠️ Báo lỗi
 
-> [!TIP]
-> Gửi Log đầy đủ sẽ giúp xác định đúng Action gây lỗi. Không cắt riêng dòng cuối vì thường thiếu nguyên nhân ban đầu.
+Tạo Issue và gửi các thông tin sau:
 
-Khi tạo Issue, hãy gửi:
-
+- Phiên bản Playbook hoặc tên tệp `.apbx`.
 - Phiên bản, Edition và Build Windows.
-- Chế độ đã chọn và các Checkbox đã đánh dấu.
-- Toàn bộ Log của AME Wizard.
-- Báo cáo Post-boot nếu lỗi liên quan đến Process, RAM hoặc dịch vụ.
-- Cấu hình phần cứng chính và thông tin máy thật hoặc máy ảo.
+- Chế độ đã chọn cùng các tùy chọn đã đánh dấu.
+- Log đầy đủ của AME Wizard.
+- Cấu hình máy và cho biết bạn dùng máy thật hay máy ảo.
+- Báo cáo Post-boot nếu vấn đề liên quan đến Process, RAM hoặc dịch vụ.
 
-Không đăng mật khẩu, Token, khóa sản phẩm hoặc thông tin cá nhân lên Issue công khai.
+Nếu lỗi xuất hiện trong game, ghi thêm tên game, Anti-cheat và cách tái hiện.
 
-📚 Nguồn tham khảo
+> [!TIP]
+> Đừng chỉ gửi dòng “Playbook halted” cuối cùng. Nguyên nhân thường nằm ở các dòng phía trước.
 
-SuperStrike X1 được phát triển độc lập, đồng thời tham khảo ý tưởng, cách tổ chức và phương pháp tối ưu từ nhiều dự án cộng đồng như AtlasOS, ReviOS, XOS, FSOS , Atom và SapphireOS.
+Xóa thông tin cá nhân, Token và khóa sản phẩm khỏi Log trước khi đăng công khai.
 
-Các thiết lập được chọn lọc, kiểm tra lại và điều chỉnh để phù hợp với mục tiêu của StrikeOS: Debloat Windows, cải thiện trải nghiệm chơi game và duy trì khả năng tương thích với Anti-cheat.
+## 📚 Nguồn tham khảo
 
-StrikeOS không đại diện, không liên kết và không được bảo trợ bởi các dự án nêu trên. Tên gọi, thương hiệu, công cụ riêng và gói phần mềm của họ không được phân phối cùng dự án này.
+Trong quá trình phát triển, tôi tham khảo cách tổ chức và triển khai của AtlasOS, XOS, FSOS, INSIDEXOS, Atom và SapphireOS. Phần trình bày README có tham khảo ReviOS.
 
----
+StrikeOS không đại diện và không được bảo trợ bởi các dự án này. Việc liệt kê nguồn tham khảo cũng không có nghĩa StrikeOS áp dụng toàn bộ thiết lập của họ.
 
-<p align="center">
-  <strong>SuperStrike X1</strong><br>
-  Build for performance by StrikeOS.
-</p>
+## 📄 Giấy phép
+
+Xem [LICENSE](./LICENSE) để biết điều kiện sử dụng và phân phối mã nguồn. Các phần mã từ bên thứ ba, nếu có, chịu điều kiện giấy phép tương ứng.
+
+SuperStrike X1 không cung cấp khóa sản phẩm hoặc công cụ kích hoạt Windows. Bạn cần có giấy phép phù hợp cho Windows đang sử dụng.
