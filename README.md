@@ -38,11 +38,12 @@
 ## ⚠️ Lưu ý quan trọng (Disclaimer)
 
 > [!WARNING]
-> Playbook can thiệp sâu vào cấu hình hệ thống Windows. Mặc dù SuperStrike X1 được thiết kế với tiêu chuẩn tương thích và an toàn cao, bạn **bắt buộc phải tạo Điểm khôi phục (Restore Point) hoặc Bản sao lưu hệ thống (System Image)** trước khi sử dụng.
+> Playbook can thiệp sâu vào Windows. Mặc dù SuperStrike X1 được thiết kế với tiêu chuẩn tương thích và an toàn cao, bạn **bắt buộc phải tạo Điểm khôi phục (Restore Point) hoặc Bản sao lưu hệ thống (System Image)** trước khi sử dụng.
 >
 > - **Không khuyến nghị:** Sử dụng trên máy chủ, môi trường làm việc doanh nghiệp cần tuân thủ chính sách bảo mật riêng (Domain/MDM).
-> - **Không cam kết:** "Nhân đôi FPS". Hiệu năng thực tế tập trung vào **độ ổn định Frame Time (1% Low, 0.1% Low)** và **giảm DPC Latency/Input Lag**.
-
+> - **Hiệu năng và tương thích:** Không cam kết mức FPS, độ trễ, RAM, số Process cố định hoặc tương thích với mọi Driver, game và Anti-cheat. Giữ lại dịch vụ bảo mật không đồng nghĩa được bên thứ ba chứng nhận.
+> -  **Hỗ trợ và cập nhật:** Tiếp nhận lỗi qua Discord theo khả năng duy trì dự án, không cam kết thời gian xử lý hay lịch cập nhật. Đọc hướng dẫn Release trước khi chạy chồng phiên bản. Dịch vụ trả phí tuân theo thỏa thuận riêng.
+> - **Nguồn tải chính thức:** Chỉ tải Playbook từ Releases của repository được liên kết trên [strikeos.site](https://strikeos.site). Đối chiếu SHA256 nếu bản phát hành có công bố. StrikeOS không chủ động tích hợp virus, keylogger, botnet hoặc chức năng đánh cắp dữ liệu. Bản do bên thứ ba chỉnh sửa hoặc đóng gói lại không được xem là bản chính thức; StrikeOS không kiểm soát hay bảo đảm tính toàn vẹn của các bản đó. Nếu phát hiện dấu hiệu bất thường, hãy ngừng chạy và báo lại kèm nguồn tải, tên tệp, SHA256 và cảnh báo bảo mật để xác minh.
 ---
 
 ## 🎮 Giới thiệu SuperStrike X1
