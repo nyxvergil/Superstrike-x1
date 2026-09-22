@@ -16,7 +16,6 @@
   <img alt="Supported builds" src="https://img.shields.io/badge/BUILD-19045%20%7C%2026100%20%7C%2026200-2563EB?style=flat-square">
   <img alt="Architecture" src="https://img.shields.io/badge/ARCH-x64-6D28D9?style=flat-square">
   <img alt="Profiles" src="https://img.shields.io/badge/PROFILES-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
-  <img alt="Revision" src="https://img.shields.io/badge/REV-PERFORMANCE12--VI-2563EB?style=flat-square">
   <img alt="Status" src="https://img.shields.io/badge/STATUS-TEST-F59E0B?style=flat-square">
 </p>
 
