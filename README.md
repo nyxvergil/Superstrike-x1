@@ -20,13 +20,13 @@
   <img alt="Status" src="https://img.shields.io/badge/STATUS-TEST-F59E0B?style=flat-square">
 </p>
 
-<p align="center"><strong>Tinh gọn Windows cho máy chơi game.</strong></p>
+<p align="center"><strong>Playbook tinh gọn Windows hiệu năng cao, tối ưu hóa độ ổn định cho phần cứng.</strong></p>
 
 <p align="center">
   <a href="https://strikeos.site">Website</a> ·
   <a href="https://discord.gg/strikeos">Discord</a> ·
-  <a href="https://github.com/nyxvergil/Superstrike-x1/releases">Tải về</a> ·
-  <a href="#cai-dat">Cài đặt</a> ·
+  <a href="https://github.com/nyxvergil/Superstrike-x1/releases">Releases</a> ·
+  <a href="#cài-đặt">Cài đặt</a> ·
   <a href="https://github.com/nyxvergil/Superstrike-x1/issues">Báo lỗi</a>
 </p>
 
@@ -34,130 +34,113 @@
 
 ## Giới thiệu
 
-**SuperStrike X1** giúp bạn tinh gọn Windows đang sử dụng thông qua AME Wizard, không cần cài lại hệ điều hành.
+**SuperStrike X1** là AME Playbook tinh gọn trực tiếp trên Windows hiện tại mà không cần cài lại Windows. Dự án tập trung loại bỏ bloatware, tắt telemetry và Processes chạy ngầm, duy trì frametime phẳng đều và giải phóng tối đa tài nguyên phần cứng.
 
-Bạn có thể chọn chế độ cấu hình, gỡ các ứng dụng không dùng và giảm hoạt động nền. Để đánh giá hiệu quả trên máy của mình, hãy so sánh FPS, 1% Low, 0.1% Low và Frame Time trước và sau khi chạy.
+* **Phiên bản:** `1.0.0`
+* **Triết lý:** Ưu tiên frametime và độ bền bỉ dài hạn, loại bỏ rác ngầm nhưng giữ nguyên tính toàn vẹn của Windows...
 
-**Phiên bản: 2.0.17 — Performance12-vi Test.**
+---
 
-## Lưu ý trước khi sử dụng
+## ⚠️ Cảnh báo & Miễn trừ trách nhiệm
 
 > [!WARNING]
-> Playbook thay đổi sâu vào Windows. Hãy sao lưu hệ thống và dữ liệu trước khi chạy; Restore Point không thay thế bản sao lưu đầy đủ. Playbook không tự sao lưu và chưa có hoàn tác toàn bộ.
+> Playbook can thiệp sâu vào nhân hệ điều hành. **Yêu cầu sao lưu dữ liệu toàn vẹn trước khi chạy** (Restore Point không thể thay thế bản sao lưu gốc). Playbook không tự sao lưu và chưa hỗ trợ hoàn tác (undo) toàn bộ.
 
-- **Kết quả:** Không cam kết FPS, RAM, số Process cố định hoặc tương thích với mọi Driver, game và Anti-cheat. Đây là bản thử nghiệm.
-- **Phạm vi:** Không khuyến nghị cho máy chủ, máy làm việc quan trọng hoặc thiết bị Domain/MDM khi chưa được quản trị viên cho phép. Windows đã chỉnh sửa bằng công cụ khác có thể phát sinh xung đột.
-- **Nguồn tải:** Chỉ dùng Releases được liên kết trên [strikeos.site](https://strikeos.site), đối chiếu SHA256 nếu có. StrikeOS không kiểm soát các bản do bên thứ ba sửa hoặc đóng gói lại. Ngừng chạy và báo lại nếu có dấu hiệu bất thường.
-- **Trách nhiệm:** Bạn tự quyết định việc áp dụng sau khi đọc các thay đổi và chuẩn bị bản sao lưu. Các giới hạn trách nhiệm tuân theo giấy phép và pháp luật, không loại trừ quyền hợp pháp của bạn hoặc nghĩa vụ của bên phát triển không được phép miễn trừ.
+- **Không cam kết tuyệt đối:** FPS, RAM, số lượng Processes và độ tương thích (driver, game, anti-cheat) phụ thuộc vào phần cứng thực tế của bạn. Đây là phiên bản thử nghiệm.
+- **Giới hạn môi trường:** TUYỆT ĐỐI KHÔNG dùng cho máy chủ, máy tính doanh nghiệp (Domain/MDM) hoặc các bản Windows đã bị chỉnh sửa bởi bên thứ ba (modded OS).
+- **Miễn trừ trách nhiệm:** Người dùng hoàn toàn tự chịu trách nhiệm khi quyết định áp dụng Playbook. StrikeOS được miễn trừ mọi trách nhiệm pháp lý đối với các lỗi phát sinh, xung đột phần mềm hoặc mất mát dữ liệu.
+- **Bảo mật nguồn tải:** Chỉ sử dụng file tải trực tiếp từ [strikeos.site](https://strikeos.site) và kiểm tra đúng checksum SHA256. Ngừng chạy ngay lập tức nếu mã hash không khớp hoặc file có dấu hiệu bị can thiệp.
 
-## Windows hỗ trợ
+---
 
-| Hệ điều hành | Phiên bản | Build |
-|:---|:---:|:---:|
-| Windows 10 x64 | 22H2 | `19045` |
-| Windows 11 x64 | 24H2 | `26100` |
-| Windows 11 x64 | 25H2 | `26200` |
+## Khả năng tương thích
 
-Bạn có thể kiểm tra phiên bản Windows bằng lệnh `winver`. Playbook không chạy trên Build ngoài danh sách; một số Edition và cấu hình phần cứng vẫn chưa được kiểm thử.
+Kiểm tra bằng lệnh `winver` trước khi chạy. Playbook chỉ hỗ trợ các build x64 sau:
 
-## Chức năng và chế độ
+| Hệ điều hành | Phiên bản | Build hỗ trợ |
+| :--- | :---: | :---: |
+| **Windows 10** | 22H2 | `19045` |
+| **Windows 11** | 24H2 | `26100` |
+| **Windows 11** | 25H2 | `26200` |
 
-Playbook gỡ bớt ứng dụng, điều chỉnh dịch vụ và tác vụ nền, giảm quảng cáo và thu thập dữ liệu. Hình nền, ảnh tài khoản và màn hình khóa được thiết lập khi gói có ảnh đi kèm; kết quả màn hình khóa có thể khác nhau theo Edition Windows.
+---
 
-Giữ lại Defender, Firewall, Store/App Installer và Edge/WebView. Không chủ động tắt Windows Update hoặc dịch vụ Anti-cheat; điều này không đồng nghĩa được bên thứ ba chứng nhận tương thích.
+## Cấu hình tối ưu (Profiles)
 
-### Standard — cấu hình mặc định
+Mặc định giữ lại: **Windows Defender, Firewall, Microsoft Store và Edge/WebView**. Không can thiệp dịch vụ Anti-Cheat.
 
-Chọn Standard nếu bạn muốn bắt đầu với cấu hình cơ bản của StrikeOS. Chế độ này vẫn thay đổi sâu vào Windows:
+### 1. Standard (Khuyên dùng)
+- Cấu hình cân bằng, an toàn tuyệt đối cho mọi nhu cầu sử dụng hàng ngày và làm việc.
+- Dọn sạch bloatware, tắt telemetry và giải phóng tài nguyên nền.
+- Giữ nguyên độ ổn định gốc của Windows, cắm là chạy không cần tinh chỉnh thêm.
 
-- Tinh gọn ứng dụng, dịch vụ, tác vụ nền và giao diện.
-- Điều chỉnh bộ nhớ, ưu tiên ứng dụng đang sử dụng, FTH và BCD/timer; tắt chức năng ghi hình Game DVR.
-- Gỡ hoặc tắt các chức năng theo lựa chọn của bạn khi cài.
+### 2. Performance (Chuyên sâu)
+*Bao gồm toàn bộ cấu hình Standard và bổ sung:*
+- Dành riêng cho máy chỉ chơi game, muốn vắt kiệt hiệu năng phần cứng.
+- **Power Plan:** Kích hoạt High Performance (Desktop) và tối ưu Core Parking theo nguồn cấp.
+- **Thiết bị:** Tự động bật HAGS và MSI Mode cho GPU/NIC đủ điều kiện.
+- **Storage & Latency:** Kiểm tra kích hoạt TRIM, ép HPET qua BCD và ghim Timer Resolution 0.500 ms.
 
-### Performance
+---
 
-Chọn Performance nếu bạn muốn thử thêm các thiết lập dưới đây và sẵn sàng kiểm tra kết quả trên máy của mình. Chế độ này bao gồm toàn bộ Standard.
+## Tùy chọn thành phần
 
-- **Mạng:** Đặt TCP Auto-Tuning về `normal`, tắt RSC, kiểm tra RSS và điều chỉnh một số thuộc tính Card mạng. Đặt lại Winsock/IP và xóa bộ nhớ đệm DNS.
-- **Nguồn điện:** Chọn High Performance trên Desktop; điều chỉnh Core Parking có phân biệt Laptop và chế độ dùng nguồn.
-- **Thiết bị:** Thiết lập HAGS và MSI Mode cho GPU/Card mạng đủ điều kiện. Khả năng hoạt động thực tế phụ thuộc phần cứng và Driver.
-- **Storage:** Kiểm tra, bật TRIM khi cần; không chạy Defrag.
-- **Timer:** Ép HPET qua BCD, tạo tác vụ chạy tiện ích nền yêu cầu Timer Resolution 0,5 ms.
-
-> [!IMPORTANT]
-> Performance không bảo đảm nhanh hơn Standard. Lưu lại IP/DNS riêng và đo trước/sau khi áp dụng. Chạy Standard sau Performance không hoàn tác toàn bộ thay đổi.
-
-## Tùy chọn khi cài
-
-Bỏ chọn những chức năng bạn vẫn sử dụng. Ba mục đầu được tích sẵn.
-
-| Lựa chọn | Mặc định |
-|:---|:---:|
-| Gỡ/tắt các thành phần OneDrive | Đã chọn |
-| Gỡ Xbox và Game Bar | Đã chọn |
-| Tắt Windows Search | Đã chọn |
-| Tắt Bluetooth | Chưa chọn |
-| Tắt in và quét tài liệu | Chưa chọn |
-| Tắt cảm ứng, bút và máy tính bảng | Chưa chọn |
-| Cài Brave, Firefox hoặc Chrome | Chưa chọn |
-
-- **OneDrive:** Hãy tải tệp cần giữ về máy trước khi chọn. Playbook không tự chuyển dữ liệu và một số bản OneDrive có thể vẫn còn sau khi chạy.
-- **Xbox và Search:** Việc gỡ/tắt có thể ảnh hưởng Game Pass, ghi hình và tìm kiếm.
-- **Trình duyệt:** Nếu phát hiện trình duyệt đã được cài, Playbook sẽ bỏ qua, không cài sạch hoặc xóa hồ sơ của bạn.
+| Thành phần | Mặc định | Lưu ý |
+| :--- | :---: | :--- |
+| **Gỡ OneDrive** | Bật | Cần tải dữ liệu quan trọng về ổ đĩa cục bộ trước khi chạy. |
+| **Gỡ Xbox & Game Bar** | Bật | Ảnh hưởng Game Pass và tính năng ghi hình. |
+| **Tắt Windows Search** | Bật | Giảm tải nền ổ cứng và CPU. |
+| **Tắt Bluetooth** | Tắt | Bật nếu máy bàn không dùng thiết bị Bluetooth. |
+| **Tắt dịch vụ In / Scan** | Tắt | Tắt nếu không dùng máy in (`Spooler`). |
+| **Tắt Cảm ứng & Pen** | Tắt | Tắt trên Desktop thường để giảm tiến trình thừa. |
+| **Cài Trình duyệt** | Tắt | Tùy chọn cài sạch Brave, Chrome hoặc Firefox. |
 
 <details>
-<summary><strong>Các dịch vụ tiêu biểu được điều chỉnh</strong></summary>
+<summary><strong>Chi tiết các dịch vụ được tinh chỉnh</strong></summary>
 
-| Nhóm | Dịch vụ | Điều kiện |
-|:---|:---|:---|
-| Chẩn đoán, báo lỗi | DiagTrack, dmwappushservice, DPS, diagsvc, WerSvc, wercplsupport | Cấu hình chung |
-| Hệ thống | SysMain, MapsBroker, RetailDemo, RemoteRegistry, Fax | Cấu hình chung |
-| Đồng bộ, thông báo | OneSyncSvc, WpnService, WpnUserService | Cấu hình chung |
-| Tìm kiếm | WSearch | Chọn tắt Search |
-| Xbox | XblAuthManager, XblGameSave, XboxNetApiSvc, XboxGipSvc, GamingServices, GamingServicesNet | Chọn gỡ Xbox |
-| In, quét | Spooler, PrintNotify, StiSvc | Chọn tắt in/quét |
-| Bluetooth | bthserv, BTAGService, BthAvctpSvc | Chọn tắt Bluetooth |
-| Cảm ứng, bút | TabletInputService | Chọn tắt cảm ứng/bút |
-
-Các dịch vụ trên được tắt khi có trên máy và có thể làm mất chức năng tương ứng. Đồng bộ qua OneSyncSvc, thông báo qua WpnService/WpnUserService và Fax bị tắt trong cả hai chế độ. Bạn cần khởi động lại để các thay đổi có hiệu lực đầy đủ.
+- **Telemetry & Diagnostic:** `DiagTrack`, `dmwappushservice`, `DPS`, `diagsvc`, `WerSvc`, `wercplsupport`.
+- **Dịch vụ nền:** `SysMain`, `MapsBroker`, `RetailDemo`, `RemoteRegistry`, `Fax`, `OneSyncSvc`, `WpnService`.
+- **Dịch vụ theo tùy chọn:** `WSearch` (Search), `bthserv` (Bluetooth), `Spooler` (Print), `TabletInputService` (Touch).
 
 </details>
 
-## Runtime
+---
 
-Bạn không cần chọn cài riêng Runtime. Cả hai chế độ đều kiểm tra **Visual C++ 2015–2022 x86/x64**, **DirectX Legacy June 2010** và **.NET Framework 3.5**, bỏ qua thành phần được phát hiện đã có.
+## Runtime tích hợp
 
-Visual C++ và DirectX được tải từ Microsoft, có kiểm tra chữ ký bộ cài. Với .NET 3.5, bạn có thể cần bộ cài Windows phù hợp nếu máy thiếu nguồn cài đặt cục bộ.
+Playbook tự động kiểm tra và bổ sung các thư viện hệ thống cần thiết:
+- **Visual C++ Redistributable (2015–2022 x86/x64)**
+- **DirectX End-User Runtimes (June 2010)**
+- **.NET Framework 3.5**
 
-Nếu Log ghi `Unavailable` hoặc `SkippedNoSource`, thành phần đó chưa được cài thành công. **Completed không có nghĩa mọi Runtime đã cài đủ.** Kiểm tra Log nếu game vẫn báo thiếu thư viện.
+---
 
-<a id="cai-dat"></a>
+<a id="cài-đặt"></a>
 
-## Cài đặt
+## Quy trình cài đặt
 
-1. Kiểm tra Build Windows, hoàn tất cập nhật đang chạy và khởi động lại nếu được yêu cầu.
-2. Sao lưu hệ thống, dữ liệu; tạo Snapshot nếu dùng máy ảo.
-3. Tải AME Wizard từ nguồn chính thức và `.apbx` từ Releases của dự án.
-4. Mở `.apbx` bằng AME Wizard, chọn chế độ và kiểm tra các mục tích sẵn.
-5. Chờ hoàn tất rồi khởi động lại Windows.
+1. Kiểm tra Build Windows (`winver`) và cập nhật hoàn tất các update đang chờ.
+2. Tải [AME Wizard](https://amelabs.io) và file `.apbx` từ mục [Releases](https://github.com/nyxvergil/Superstrike-x1/releases).
+3. Khởi chạy `.apbx` thông qua AME Wizard bằng quyền Administrator.
+4. Chọn Profile (`Standard` hoặc `Performance`) và tích chọn các thành phần mong muốn.
+5. Chờ hoàn tất quá trình thiết lập và khởi động lại máy.
 
-Hãy duy trì Internet và nguồn điện ổn định, sử dụng tài khoản có quyền quản trị. Không chạy đồng thời Windows Update, DISM, trình cài Driver hoặc công cụ tối ưu khác. Bạn không cần chủ động tắt Tamper Protection để làm theo hướng dẫn này.
+---
 
-Nếu gặp lỗi, giữ Log trước khi thử lại. Sau khởi động, chờ khoảng 10–15 phút trước khi đo Process, RAM và hiệu năng.
+## Hỗ trợ & Đóng góp
 
-## Hỗ trợ và cập nhật
+- **Báo lỗi:** Mở [GitHub Issues](https://github.com/nyxvergil/Superstrike-x1/issues), cung cấp phiên bản Windows (`winver`), thông số phần cứng và đính kèm file log (nhớ xóa bỏ thông tin cá nhân hoặc token trước khi gửi).
+- **Cộng đồng:** Tham gia trao đổi, thảo luận trực tiếp tại [Discord Cộng đồng](https://discord.gg/strikeos).
+- **Phạm vi hỗ trợ:** Hỗ trợ kỹ thuật được duy trì trong khả năng của đội ngũ phát triển. Đối với các gói dịch vụ tùy biến có phí, quyền lợi sẽ áp dụng theo thỏa thuận riêng.
+- **Cập nhật:** Các phiên bản mới kèm changelog được phát hành chính thức tại thẻ Releases. Playbook không hỗ trợ tự cập nhật ngầm.
 
-Gửi [Issue](https://github.com/nyxvergil/Superstrike-x1/issues) hoặc liên hệ [Discord](https://discord.gg/strikeos), kèm tên tệp Playbook, Build Windows, cấu hình máy, tùy chọn đã chọn và Log đầy đủ. Xóa thông tin cá nhân, Token và khóa sản phẩm trước khi đăng.
+---
 
-Bạn có thể nhận hỗ trợ trong khả năng duy trì dự án; không có cam kết thời gian xử lý hay lịch cập nhật cố định. Nếu sử dụng dịch vụ trả phí, phạm vi hỗ trợ tuân theo thỏa thuận riêng.
+## Nguồn tham khảo & Giấy phép
 
-Bản mới và hướng dẫn nâng cấp được đăng trong Releases. Playbook không tự cập nhật: hãy đọc hướng dẫn trước khi chạy bản mới lên máy đã tối ưu. Bạn không cần chạy lại sau mỗi lần Windows Update.
+Dự án học hỏi cách cấu trúc và triển khai từ các playbook đi trước: **AtlasOS, ReviOS, XOS, FSOS, Atom, SapphireOS**.
 
-## Nguồn tham khảo và giấy phép
-
-Tham khảo cách tổ chức và triển khai từ **AtlasOS, XOS, FSOS, INSIDEXOS, Atom, SapphireOS**; bố cục README tham khảo **ReviOS**. StrikeOS không đại diện hoặc được bảo trợ bởi các dự án này.
-
-Xem [LICENSE](./LICENSE) và giấy phép từng thành phần bên thứ ba trong repository. Ghi nguồn không thay thế nghĩa vụ giấy phép. StrikeOS không cung cấp khóa sản phẩm hoặc công cụ kích hoạt Windows.
+<sub>StrikeOS là dự án độc lập, không đại diện hoặc chịu sự ủy quyền từ các bên nêu trên. Chi tiết xem tại [LICENSE](./LICENSE) và tài liệu giấy phép đi kèm. Dự án tuyệt đối không cung cấp khóa sản phẩm hay công cụ kích hoạt Windows.</sub>
 
 ---
 
