@@ -17,7 +17,7 @@
   <img alt="Profiles" src="https://img.shields.io/badge/PROFILE-STANDARD%20%7C%20PERFORMANCE-E11D48?style=flat-square">
 </p>
 
-<p align="center"><strong>Tinh gọn Windows cho chơi game. Giữ lại các thành phần bảo mật cốt lõi.</strong></p>
+<p align="center"><strong>Tinh gọn Windows cho chơi game, đồng thời giữ lại các thành phần bảo mật cốt lõi.</strong></p>
 
 <p align="center">
   <a href="https://strikeos.site">Website</a> ·
@@ -29,13 +29,29 @@
 
 ---
 
-## Giới thiệu
+## 🎮 Giới thiệu
 
-SuperStrike X1 là AME Playbook áp dụng trực tiếp lên Windows đang sử dụng, không phải bản Windows tùy chỉnh và không yêu cầu cài lại hệ điều hành. Playbook tập trung giảm ứng dụng và hoạt động nền không cần thiết, đồng thời giữ lại Windows Defender, Firewall và các thành phần bảo mật quan trọng.
+SuperStrike X1 là AME Playbook áp dụng lên Windows bạn đang dùng. Không cần cài lại hệ điều hành và đây không phải bản Windows tùy chỉnh. Playbook tập trung giảm một số ứng dụng, dịch vụ và hoạt động nền; Windows Defender, Firewall cùng các thành phần bảo mật cốt lõi được giữ lại.
 
-Đây là **bản thử nghiệm**. Các build bên dưới là phạm vi mục tiêu được khai báo; kết quả có thể khác theo Edition, driver, phần cứng và phần mềm trên từng máy. Kiểm tra cú pháp và bài thử tự động không thay thế việc chạy thử trên Windows thật.
+Đây là **bản thử nghiệm**. Các build bên dưới là những phiên bản được khai báo hỗ trợ, nhưng chưa thể đại diện cho mọi cấu hình. Kết quả còn tùy Edition, driver, phần cứng và phần mềm trên máy. Kiểm tra tự động không thay thế việc thử nghiệm trên Windows thật.
 
-## Windows mục tiêu
+## ⚠️ Cảnh báo và miễn trừ trách nhiệm
+
+> **Đây là phần mềm thử nghiệm, được cung cấp “nguyên trạng” (AS IS). Hãy đọc các giới hạn dưới đây trước khi chạy. Nếu không đồng ý, vui lòng không sử dụng Playbook.**
+
+- **Ảnh hưởng đến hệ thống:** Playbook thay đổi cài đặt Windows, ứng dụng, dịch vụ, tác vụ và một số thiết lập mạng/phần cứng. Lỗi hoặc mất chức năng có thể xảy ra; trong trường hợp nghiêm trọng, bạn có thể phải sửa chữa hoặc cài lại Windows. Playbook không tự sao lưu và không hoàn tác đầy đủ. Restore Point không thay thế System Image hoặc bản sao lưu riêng.
+- **Tình trạng kiểm thử:** Các build được liệt kê là phạm vi hỗ trợ dự kiến, không có nghĩa mọi Edition, máy OEM, driver hay trạng thái Windows đã được thử. Một số lỗi tùy chọn chỉ được ghi cảnh báo để các bước khác tiếp tục; lỗi ở bước bắt buộc hoặc tiến trình cài đặt quá thời hạn vẫn có thể khiến AME Wizard dừng. Trạng thái “Completed” không đồng nghĩa mọi tùy chọn đã áp dụng thành công.
+- **Hiệu năng:** Không bảo đảm mức FPS, 1% Low, 0.1% Low, độ trễ, RAM, số tiến trình hay mức cải thiện cụ thể. Kết quả thay đổi theo cấu hình, driver, game và phần mềm đang chạy.
+- **Game và Anti-cheat:** Giữ lại thành phần bảo mật của Windows không đồng nghĩa được nhà phát hành game chứng nhận. Không thể bảo đảm tương thích hoặc tránh cảnh báo/khóa tài khoản. Hãy kiểm tra yêu cầu của game và Anti-cheat trước khi dùng.
+- **Máy không nên dùng để thử:** Tránh máy chủ, máy làm việc quan trọng, máy thuộc Domain/MDM hoặc máy đang được hỗ trợ từ xa. Trên máy chính, hãy tạo bản sao lưu có thể khôi phục và chuẩn bị phương án xử lý nếu Windows hoặc mạng gặp sự cố.
+- **Tệp tải xuống:** Chỉ tải từ Releases của repository được liên kết trên [strikeos.site](https://strikeos.site/) và đối chiếu SHA-256 nếu có công bố. Không chạy tệp đã chỉnh sửa, đóng gói lại hoặc lấy từ nguồn không xác minh. Runtime được tải từ nhà cung cấp tương ứng; StrikeOS không kiểm soát máy chủ hay các thay đổi từ bên thứ ba. Nếu hash không khớp hoặc tệp bị cảnh báo, đừng chạy và hãy báo để kiểm tra.
+- **Trách nhiệm khi sử dụng:** Bạn cần có quyền hợp pháp và quyền quản trị trên thiết bị, xem lại các lựa chọn trước khi xác nhận và tự sao lưu dữ liệu. Khi gửi log, hãy xóa mật khẩu, token, khóa sản phẩm và thông tin cá nhân.
+- **Giới hạn trách nhiệm:** Trong phạm vi pháp luật cho phép, người dùng tự chịu trách nhiệm về quyết định tải và chạy Playbook cũng như các rủi ro có thể phát sinh, gồm mất dữ liệu, gián đoạn công việc hoặc lỗi hệ thống/thiết bị. Nội dung này không loại trừ quyền của người dùng hay trách nhiệm mà pháp luật không cho phép miễn trừ. Thỏa thuận dịch vụ riêng, nếu có, áp dụng cho dịch vụ tương ứng.
+- **Hỗ trợ:** Báo lỗi qua GitHub Issues hoặc Discord. Nhóm phát triển tiếp nhận và xử lý theo khả năng; không cam kết thời gian phản hồi, sửa lỗi hay lịch cập nhật. Hãy đọc ghi chú phát hành trước khi nâng cấp và không chạy chồng phiên bản nếu chưa có hướng dẫn.
+
+Thông tin này giải thích phạm vi và rủi ro sử dụng, không thay thế tư vấn pháp lý. Muốn dùng làm điều khoản pháp lý chính thức, chủ dự án nên nhờ luật sư rà soát theo nơi phát hành.
+
+## 🪟 Windows mục tiêu
 
 | Hệ điều hành | Phiên bản | Build |
 |---|---:|---:|
@@ -43,56 +59,42 @@ SuperStrike X1 là AME Playbook áp dụng trực tiếp lên Windows đang sử
 | Windows 11 64-bit | 24H2 | `26100` |
 | Windows 11 64-bit | 25H2 | `26200` |
 
-Build ngoài danh sách sẽ bị từ chối. Không chạy trên bản Windows tùy chỉnh, máy chủ hoặc thiết bị do tổ chức quản lý nếu chưa được quản trị viên cho phép.
+Build ngoài danh sách sẽ bị từ chối. Không chạy trên Windows đã được bên thứ ba tùy chỉnh. Với thiết bị do tổ chức quản lý, cần có sự cho phép của quản trị viên.
 
-## Chế độ
+## ⚙️ Chế độ
 
 ### Standard
 
-Cấu hình tinh gọn cơ bản. Playbook xử lý ứng dụng, dịch vụ, tác vụ nền và một số thiết lập Windows đã chọn; một số mục có thể được bật hoặc tắt trong trang lựa chọn. Không có mức FPS, RAM hay số tiến trình được bảo đảm.
+Cấu hình cơ bản, gồm các thay đổi ứng dụng, dịch vụ, tác vụ nền và thiết lập Windows. Một số mục có thể chọn trong AME Wizard. Không có mức FPS, RAM hay số tiến trình cố định được bảo đảm.
 
 ### Performance
 
-Bao gồm Standard và các bước bổ sung cho lưu trữ, mạng, nguồn điện, thiết bị đồ họa và độ trễ, như TRIM, RSS, TCP Auto-Tuning, HAGS, MSI Mode, HPET/BCD, Timer Resolution và đặt lại Winsock/IP.
+Bao gồm Standard và một số thiết lập bổ sung về lưu trữ, mạng, nguồn điện, đồ họa và độ trễ: TRIM, RSS, TCP Auto-Tuning, HAGS, MSI Mode, HPET/BCD, Timer Resolution và đặt lại Winsock/IP.
 
-Một số thiết lập phụ thuộc thiết bị hoặc driver; có thể không áp dụng được hoặc không cải thiện kết quả trên máy của bạn. Đặt lại Winsock/IP có thể làm gián đoạn mạng hoặc ảnh hưởng VPN và cấu hình mạng riêng. Hãy đo FPS, 1% Low, 0.1% Low và Frame Time trước/sau trên cùng điều kiện nếu muốn đánh giá tác động.
+Các thiết lập này phụ thuộc thiết bị và driver; chúng có thể không áp dụng được hoặc không cải thiện hiệu năng. Đặt lại Winsock/IP có thể làm gián đoạn kết nối hoặc ảnh hưởng VPN và cấu hình mạng riêng. Muốn so sánh, hãy đo trước và sau trong cùng điều kiện.
 
 ## Lựa chọn bổ sung
 
-Tùy trang lựa chọn trong AME Wizard, người dùng có thể chọn gỡ OneDrive, Xbox/Game Bar, tắt Windows Search hoặc một số dịch vụ Bluetooth, in/scan và cảm ứng; đồng thời có thể chọn cài Brave, Firefox hoặc Chrome. Chỉ chọn tắt chức năng phần cứng nếu máy không sử dụng thiết bị đó. Gỡ Xbox/Game Bar có thể ảnh hưởng Game Pass, ghi hình hoặc tính năng liên quan.
+Trong AME Wizard, bạn có thể chọn gỡ OneDrive, Xbox/Game Bar, tắt Windows Search, hoặc tắt một số dịch vụ Bluetooth, in/scan và bàn phím cảm ứng/viết tay. Có thể chọn cài Brave, Firefox hoặc Chrome. Các lựa chọn OneDrive, Xbox/Game Bar và Windows Search được tích sẵn; hãy bỏ chọn nếu muốn giữ lại. Bluetooth và in/scan mặc định không bị tắt. Tùy chọn bàn phím cảm ứng/viết tay chỉ tắt `TabletInputService`, không tắt phần cứng hoặc driver màn hình cảm ứng. Gỡ Xbox/Game Bar có thể ảnh hưởng Game Pass và chức năng ghi hình.
 
 ## Gaming Runtime
 
-Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua; thành phần còn thiếu được lấy từ nguồn Microsoft và kiểm tra chữ ký khi có trình cài tương ứng. Nếu tải xuống, TLS, chữ ký hoặc nguồn cài Windows không khả dụng, thành phần có thể được báo là chưa cài và Playbook tiếp tục. Nếu trình cài hoặc servicing bị treo quá thời hạn, Playbook có thể dừng để tránh khởi chạy thêm tiến trình cài đặt chồng lấp.
+Playbook kiểm tra Visual C++ 2015–2022 x86/x64, DirectX Legacy và .NET Framework 3.5. Thành phần đã có sẽ được bỏ qua. Thành phần còn thiếu được tải từ nguồn Microsoft và kiểm tra chữ ký khi có thể. Nếu tải xuống, kết nối bảo mật hoặc nguồn cài Windows không sẵn có, Runtime có thể được ghi nhận là chưa cài và các bước khác tiếp tục. Nếu trình cài hoặc Windows servicing vượt thời hạn chờ, AME Wizard có thể dừng để tránh chạy thêm tiến trình cài đặt cùng lúc.
 
-## Cài đặt
+<a id="cài-đặt"></a>
 
-1. Xác nhận phiên bản và build bằng `winver`.
-2. Sao lưu dữ liệu quan trọng; ưu tiên tạo System Image hoặc Snapshot có thể khôi phục.
-3. Tải AME Wizard và tệp `.apbx` từ các liên kết chính thức ở đầu trang hoặc mục Releases.
-4. Mở AME Wizard, nạp tệp `.apbx`, chọn Standard hoặc Performance và kiểm tra kỹ các lựa chọn bổ sung.
-5. Không tắt máy, đóng Wizard hoặc chạy công cụ tối ưu khác khi Playbook đang hoạt động.
-6. Đọc toàn bộ kết quả, xử lý cảnh báo, rồi khởi động lại nếu được yêu cầu.
+## 📖 Cài đặt
 
-## Cảnh báo và miễn trừ trách nhiệm
+1. Kiểm tra phiên bản và build bằng `winver`.
+2. Sao lưu dữ liệu; nên tạo System Image hoặc Snapshot có thể khôi phục.
+3. Tải AME Wizard và `.apbx` từ các liên kết chính thức ở đầu trang hoặc mục Releases.
+4. Mở AME Wizard, nạp `.apbx`, chọn chế độ và rà lại các tùy chọn.
+5. Trong khi chạy, không tắt máy, đóng Wizard hoặc chạy thêm công cụ tối ưu.
+6. Đọc kết quả và cảnh báo. Khởi động lại nếu được yêu cầu.
 
-> **Đây là phần mềm thử nghiệm, được cung cấp “nguyên trạng” (AS IS). Chỉ tiếp tục nếu bạn đã hiểu các giới hạn dưới đây và chấp nhận tự quyết định việc sử dụng. Nếu không đồng ý, không tải hoặc chạy Playbook.**
+## 🛠️ Báo lỗi
 
-- **Có thể ảnh hưởng Windows và dữ liệu.** Playbook thay đổi cài đặt hệ thống, dịch vụ, tác vụ, ứng dụng và một số cấu hình mạng/phần cứng. Có thể phát sinh lỗi, mất chức năng, gián đoạn mạng, lỗi driver hoặc cần sửa chữa/cài đặt lại Windows. Playbook không sao lưu và không hoàn tác đầy đủ mọi thay đổi. Restore Point không thay thế bản sao lưu độc lập.
-- **Bản thử nghiệm chưa được xác nhận trên mọi cấu hình.** Khai báo hỗ trợ build không đồng nghĩa mọi Edition, máy OEM, driver, ứng dụng hoặc trạng thái Windows đã được kiểm thử. Kiểm tra tự động không chứng minh Playbook sẽ hoàn tất trên máy của bạn. Một số lỗi phụ được ghi cảnh báo để bước khác tiếp tục; lỗi ở bước bắt buộc, trạng thái không an toàn hoặc tiến trình cài đặt quá thời hạn vẫn có thể làm Wizard dừng. “Completed” không có nghĩa mọi tùy chọn đều áp dụng thành công.
-- **Không cam kết hiệu năng.** Không bảo đảm FPS, 1% Low, 0.1% Low, độ trễ, mức RAM, số tiến trình, độ ổn định hoặc mức cải thiện cụ thể. Kết quả tùy thuộc cấu hình máy, phiên bản Windows, driver, game và phần mềm chạy nền.
-- **Anti-cheat và dịch vụ bên thứ ba.** Playbook giữ lại các thành phần bảo mật cốt lõi và không chủ động tắt dịch vụ anti-cheat đã nêu trong dự án. Điều đó không phải chứng nhận hoặc bảo đảm tương thích, không bảo đảm tránh cảnh báo/khóa tài khoản và không thay thế quy định của nhà phát hành game. Người dùng cần tự kiểm tra yêu cầu của game và anti-cheat trước khi áp dụng.
-- **Máy không phù hợp để thử nghiệm.** Không dùng trên máy chủ, máy làm việc quan trọng, máy thuộc Domain/MDM hoặc máy khách đang được hỗ trợ từ xa. Với máy chính, hãy có bản sao lưu có thể khôi phục và chuẩn bị phương án xử lý nếu Windows hoặc mạng gặp sự cố.
-- **Nguồn tải và tệp bên thứ ba.** Chỉ tải bản phát hành từ Releases của repository được liên kết trên [strikeos.site](https://strikeos.site/); đối chiếu SHA-256 do dự án công bố. Không chạy bản đã chỉnh sửa, đóng gói lại hoặc lấy từ nguồn không xác minh. Runtime bên ngoài được tải từ nhà cung cấp tương ứng; StrikeOS không kiểm soát máy chủ, thay đổi, gián đoạn hay sự cố bảo mật của bên thứ ba. Nếu hash không khớp hoặc có cảnh báo bất thường, không chạy tệp và hãy báo lại để xác minh.
-- **Trách nhiệm của người dùng.** Người chạy Playbook phải có quyền hợp pháp trên thiết bị, quyền quản trị cần thiết, đọc các lựa chọn trước khi xác nhận và tự bảo vệ dữ liệu. Hãy dừng sử dụng nếu thấy hành vi bất thường; khi báo lỗi, gửi log và thông tin build nhưng xóa mật khẩu, token, khóa sản phẩm và dữ liệu cá nhân trước khi đăng công khai.
-- **Giới hạn trách nhiệm.** Trong phạm vi pháp luật cho phép, nhóm StrikeOS không chịu trách nhiệm đối với mất dữ liệu, gián đoạn công việc/dịch vụ, lỗi hệ điều hành, phần mềm hoặc thiết bị phát sinh từ việc tải, lựa chọn, cài đặt hay sử dụng Playbook; người dùng tự chịu trách nhiệm cho quyết định áp dụng và hậu quả có thể dự đoán được. Điều khoản này không loại trừ quyền hoặc trách nhiệm nào mà pháp luật hiện hành không cho phép loại trừ. Nếu có thỏa thuận dịch vụ riêng, thỏa thuận đó được áp dụng cho phạm vi dịch vụ tương ứng.
-- **Hỗ trợ và cập nhật.** Báo lỗi qua GitHub Issues hoặc Discord theo khả năng duy trì dự án. Không cam kết thời gian phản hồi, sửa lỗi, hỗ trợ từng cấu hình hay lịch phát hành. Đọc ghi chú của từng bản trước khi cập nhật; không chạy chồng phiên bản nếu chưa có hướng dẫn.
-
-Thông tin này nhằm giúp người dùng hiểu rủi ro và phạm vi hỗ trợ; không thay thế tư vấn pháp lý. Nếu cần điều khoản có hiệu lực pháp lý tại một quốc gia cụ thể, chủ dự án nên nhờ luật sư rà soát.
-
-## Báo lỗi
-
-Khi tạo Issue, hãy gửi phiên bản/Edition/build Windows, cấu hình phần cứng, chế độ và lựa chọn đã dùng, toàn bộ log AME Wizard, cùng báo cáo sau khởi động lại nếu có. Không đăng thông tin nhạy cảm công khai.
+Khi tạo Issue, gửi phiên bản, Edition và build Windows; cấu hình phần cứng; chế độ và lựa chọn đã dùng; cùng toàn bộ log AME Wizard. Nếu có, đính kèm báo cáo sau khởi động lại. Xóa thông tin nhạy cảm trước khi đăng công khai.
 
 ---
 
