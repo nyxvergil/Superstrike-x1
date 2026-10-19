@@ -136,19 +136,6 @@ Playbook tự động kiểm tra sự hiện diện của Visual C++ 2015–2022
 
 ---
 
-## Tệp phát hành & Mã băm (SHA-256)
-
-Vui lòng kiểm tra mã băm SHA-256 sau khi tải về để đảm bảo tệp nguyên bản:
-
-| Tên tệp | Định dạng | Dung lượng | SHA-256 Checksum |
-|---|:---:|:---:|---|
-| **`Superstrike-x1.apbx`** | AME Playbook (Khuyên dùng) | 9.13 MB | `49456B083ED141A5A2DA9B97D99DAC272F16C2D02A3DF01E92BC36A58BC95131` |
-| **`Superstrike-x1.zip`** | Mã nguồn / Lưu trữ | 10.07 MB | `364F0E120B6279A6A97C0195D5CE36E3BB6BD0B507F9FD7620EB4BABCA117F28` |
-
-> 🔑 **Mật khẩu AME Playbook:** `malte`
-
----
-
 ## Báo lỗi và Đóng góp
 
 Mọi đóng góp và phản hồi kỹ thuật đều được hoan nghênh:
