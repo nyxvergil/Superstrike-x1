@@ -5,16 +5,16 @@
 
   <p>
     <a href="https://github.com/nyxvergil/Superstrike-x1/releases">
-      <img src="https://img.shields.io/badge/RELEASE-v1.0.1-5B21FF?style=for-the-badge&logo=windows11&logoColor=white" alt="Release v1.0.1">
+      <img src="https://img.shields.io/badge/PHI%C3%8AN%20B%E1%BA%A2N-v1.0.1-5B21FF?style=for-the-badge&logo=windows11&logoColor=white" alt="Phiên bản v1.0.1">
     </a>
-    <img src="https://img.shields.io/badge/WINDOWS-10%20%2F%2011-0d0d10?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows">
-    <img src="https://img.shields.io/badge/ARCH-AMD64-5B21FF?style=for-the-badge" alt="Architecture">
-    <img src="https://img.shields.io/badge/ANTI--CHEAT-VANGUARD%20READY-0d0d10?style=for-the-badge&logo=riotgames&logoColor=5B21FF" alt="Anti-Cheat">
+    <img src="https://img.shields.io/badge/H%E1%BB%86%20%C4%90I%E1%BB%80U%20H%C3%80NH-WINDOWS%2010%20%2F%2011-0d0d10?style=for-the-badge&logo=windows11&logoColor=white" alt="Windows">
+    <img src="https://img.shields.io/badge/KI%E1%BA%BEN%20TR%C3%9AC-AMD64-5B21FF?style=for-the-badge" alt="Kiến trúc">
+    <img src="https://img.shields.io/badge/ANTI--CHEAT-T%C6%AF%C6%A0NG%20TH%C3%8DCH-0d0d10?style=for-the-badge&logo=riotgames&logoColor=5B21FF" alt="Anti-Cheat">
     <a href="https://discord.gg/StrikeOS">
       <img src="https://img.shields.io/badge/Discord-StrikeOS-0d0d10?style=for-the-badge&logo=discord&logoColor=white&labelColor=5B21FF" alt="Discord">
     </a>
     <a href="https://strikeos.site">
-      <img src="https://img.shields.io/badge/Site-strikeos.site-0d0d10?style=for-the-badge&logo=cloudflare&logoColor=5B21FF" alt="Site">
+      <img src="https://img.shields.io/badge/Website-strikeos.site-0d0d10?style=for-the-badge&logo=cloudflare&logoColor=5B21FF" alt="Website">
     </a>
   </p>
 </div>
@@ -25,26 +25,26 @@
 
 <table align="center" width="85%">
 <tr>
-<td width="65%" align="center">
+<td width="65%" align="left">
 
-<h2>Windows, without Microsoft's bullshit.</h2>
+<h3>Tối ưu hóa Windows cho Hiệu năng và Độ ổn định</h3>
 
-SuperStrike X1 is an open Windows optimization playbook for <strong>AME Wizard</strong>.
-
-<br>
-
-Built for <strong>rock-solid frametimes and competitive latency</strong>:
-zero-placebo kernel tuning, driver interrupt balancing, and modular revert scripts.
+SuperStrike X1 là bộ kịch bản cấu hình tinh giản Windows dạng mã nguồn mở, hoạt động thông qua nền tảng <strong>AME Wizard</strong>.
 
 <br>
 
-100% opt-in. Check only what you need, uncheck what you want to keep.
-Windows Defender, Riot Vanguard (CFG/DEP), and Windows Update servicing remain fully functional.
-A single reboot is required after completion.
+Được thiết kế nhằm mục tiêu <strong>cải thiện tính ổn định thời gian xuất khung hình (frametime) và giảm thiểu độ trễ hệ thống</strong>:
+áp dụng các tinh chỉnh kernel thực tế, cân bằng ngắt phần cứng (MSI Mode) và tích hợp sẵn các tập lệnh khôi phục nguyên trạng.
 
 <br>
 
-<strong>Low Latency · Frametime Consistency · Anti-Cheat Ready · Fully Reversible</strong>
+Toàn bộ quy trình mang tính <strong>tự nguyện (100% opt-in)</strong>: người dùng chủ động lựa chọn thành phần cần tinh chỉnh và giữ lại các dịch vụ cần thiết.
+Các cơ chế an toàn gồm Windows Defender, Riot Vanguard (CFG/DEP) và hệ thống Windows Update được duy trì hoạt động bình thường.
+Hệ thống chỉ cần khởi động lại một lần sau khi hoàn tất.
+
+<br>
+
+<strong>Ổn định khung hình · Giảm độ trễ · Tương thích Anti-Cheat · Dễ dàng hoàn tác</strong>
 
 </td>
 <td width="35%" align="center">
@@ -60,124 +60,124 @@ A single reboot is required after completion.
 ---
 
 > [!NOTE]
-> **Zero-Placebo Guarantee.** No broken registry cache tricks or forced MPO disabling. Every tweak is targeted at measurable DPC latency and background thread contention.
+> **Cam kết tính thực tế:** Không áp dụng các thiết lập registry ảo hoặc ép tắt MPO gây lỗi hiển thị. Mọi tùy chỉnh đều hướng tới việc giảm độ trễ ngắt DPC và hạn chế xung đột luồng xử lý nền.
 
 ---
 
-## 1. Verified Telemetry & Benchmark
+## 1. Dữ liệu Đo kiểm Thực tế (Benchmark)
 
-Tested on identical hardware across a repeatable 60-second capture loop in **GTA5VN / FiveM (`GTASVN_GameProcess.exe`)**:
+Thử nghiệm được thực hiện trên cùng một cấu hình phần cứng, ghi lại qua vòng lặp cố định 60 giây trong **GTA5VN / FiveM (`GTASVN_GameProcess.exe`)**:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/benchmark.png" width="820" alt="Frame-Time Analysis Benchmark Data">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/benchmark.png" width="820" alt="Dữ liệu đo kiểm thời gian xuất khung hình">
 </p>
 
-| Telemetry Metric | Stock Windows (Before) | SuperStrike X1 (After) | Improvement |
+| Chỉ số Đo lường | Windows Mặc định (Gốc) | SuperStrike X1 (Sau tinh chỉnh) | Chênh lệch Thực tế |
 | :--- | :---: | :---: | :---: |
-| **Average FPS** | 174.61 FPS | **253.61 FPS** | **+45.2%** |
-| **1% Low FPS (Stutter Metric)** | 20.66 FPS | **173.88 FPS** | **+741.6%** (Eliminated hitching) |
-| **Minimum FPS** | 16.98 FPS | **83.81 FPS** | **+393.5%** |
-| **Frametime Deviation (StDev)** | 32.18 ms | **27.19 ms** | **-4.99 ms** (Tighter pacing) |
-| **Total Frames Rendered (60s)** | 10,478 frames | **15,217 frames** | **+4,739 frames** |
-| **Idle Process Count** | 160–180+ | **~70–85** | ~55% reduction |
+| **FPS Trung bình (Average FPS)** | 174.61 FPS | **253.61 FPS** | **+45.2%** |
+| **1% Low FPS (Chỉ số giật lag)** | 20.66 FPS | **173.88 FPS** | **+741.6%** (Khắc phục hiện tượng khựng khung hình) |
+| **FPS Thấp nhất (Minimum FPS)** | 16.98 FPS | **83.81 FPS** | **+393.5%** |
+| **Độ lệch Frametime (StDev)** | 32.18 ms | **27.19 ms** | **-4.99 ms** (Độ ổn định nhịp khung hình cao hơn) |
+| **Tổng số khung hình (60s)** | 10,478 frames | **15,217 frames** | **+4,739 frames** |
+| **Số tiến trình nền khi nghỉ (Idle)** | 160–180+ | **~70–85** | Giảm khoảng 55% |
 
 ---
 
-## 2. Core Optimizations
+## 2. Các Nhóm Tối ưu Cốt lõi
 
-- **SvcHost Memory Consolidation:** Groups 160+ fragmented background services into shared host processes, sharply reducing CPU context-switching overhead.
-- **Hardware & Network Latency:** Disables network card power throttling (EEE, Green Ethernet) and packet coalescing (LSO, RSC) for instant packet delivery. Sets dedicated High-Priority MSI vector interrupts on GPU and NIC.
-- **Dynamic Memory Gating:** Safely locks the kernel executive on systems with $\ge$ 12GB RAM to eliminate sudden paging pauses; keeps stock paging safe on low-RAM systems.
-- **DirectFlip & WDDM 3.0+ Compliant:** Retains Hardware-Accelerated GPU Scheduling (HAGS) and native DirectFlip presentation. Zero broken MPO overrides.
-- **Managed Defender Impact:** Retains Defender protection while capping scanning CPU factor to 15% and excluding common game archive packages.
+- **Gộp tiến trình dịch vụ SvcHost:** Gom nhóm hơn 160 dịch vụ nền phân tán vào các tiến trình dùng chung phù hợp, giảm thiểu tần suất chuyển đổi ngữ cảnh CPU (CPU context-switching).
+- **Tối ưu phần cứng & mạng:** Vô hiệu hóa tính năng tiết kiệm điện cổng mạng (EEE, Green Ethernet) và cơ chế gom gói trễ (LSO, RSC) nhằm đẩy nhanh tốc độ phản hồi gói tin. Thiết lập chế độ ngắt MSI (Message Signaled Interrupts) mức độ ưu tiên cao cho card mạng và GPU.
+- **Quản lý bộ nhớ & phân trang động:** Khóa nhân hệ thống (kernel executive) vào RAM trên các thiết bị sở hữu $\ge$ 12GB RAM nhằm hạn chế tình trạng trễ do truy xuất ổ đĩa; tự động duy trì cơ chế phân trang mặc định trên hệ thống ít RAM.
+- **Tuân thủ chuẩn DirectFlip & WDDM 3.0+:** Giữ nguyên tính năng Tăng tốc GPU bằng phần cứng (HAGS) và cơ chế hiển thị DirectFlip gốc. Không áp dụng các biện pháp ép tắt MPO thiếu an toàn.
+- **Điều phối tài nguyên Windows Defender:** Giữ nguyên khả năng bảo vệ theo thời gian thực nhưng giới hạn mức sử dụng CPU tối đa khi quét định kỳ ở ngưỡng 15%, đồng thời hỗ trợ loại trừ các thư mục chứa tệp nén trò chơi phổ biến.
 
 ---
 
-## 3. Desktop & Visual Preset
+## 3. Cấu hình Giao diện & Hiệu ứng
 
-Trims unnecessary window animations and slide transitions while keeping high-DPI text readability and explorer usability:
+Lược bỏ các hiệu ứng cuộn và chuyển động cửa sổ không cần thiết, nhưng vẫn bảo toàn độ sắc nét của văn bản và trải nghiệm sử dụng hàng ngày:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/visual_effects_preset.png" width="380" alt="Visual Effects Configuration">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/visual_effects_preset.png" width="380" alt="Cấu hình hiệu ứng giao diện">
 </p>
 
-*Preserves ClearType font smoothing, media thumbnails, and icon shadows. Eliminates UI render lag.*
+*Giữ nguyên cơ chế làm mịn chữ ClearType, ảnh thu nhỏ (thumbnail) của tệp tin và đổ bóng biểu tượng. Giảm tải quá trình dựng hình của giao diện.*
 
 ---
 
-## 4. Configuration Pages (AME Wizard)
+## 4. Các Tùy chọn Trong AME Wizard
 
-All checkboxes are **unchecked by default**. Nothing is removed without your explicit choice:
+Tất cả các hộp kiểm đều ở trạng thái **không chọn theo mặc định**. Hệ thống không tự ý gỡ bỏ bất kỳ thành phần nào nếu chưa có xác nhận từ người dùng:
 
-| Page | Section | Options | Default |
+| Trang | Danh mục | Nội dung Tùy chọn | Thiết lập Mặc định |
 | :---: | :--- | :--- | :---: |
-| **1** | Optimization Profile | `Performance` / `Standard` | Performance |
-| **2** | System App Removals | `Microsoft Edge`, `Microsoft OneDrive`, `Xbox & Game Bar` | Opt-in |
-| **3** | Modern AI & Feeds | `Widgets & News Feed`, `Copilot, Recall & Windows AI` | Opt-in |
-| **4** | Desktop & UI | `Disable Transparency`, `Classic Context Menu (Win 10)` | Opt-in |
-| **5** | Peripherals & Services | `Search Indexing`, `Bluetooth`, `Print Spooler`, `Touch Keyboard` | Opt-in |
-| **6** | Web Browser | `None`, `Brave`, `Mozilla Firefox`, `Google Chrome` | Brave (Selectable) |
+| **1** | Hồ sơ tối ưu | `Hiệu năng (Performance)` / `Tiêu chuẩn (Standard)` | Hiệu năng |
+| **2** | Ứng dụng tích hợp | `Microsoft Edge`, `Microsoft OneDrive`, `Xbox & Game Bar` | Tùy chọn chủ động (Opt-in) |
+| **3** | Tính năng AI & Bảng tin | `Widgets & Tin tức`, `Copilot, Recall & Windows AI` | Tùy chọn chủ động (Opt-in) |
+| **4** | Giao diện hệ thống | `Tắt độ trong suốt (Transparency)`, `Menu chuột phải cổ điển (Win 10)` | Tùy chọn chủ động (Opt-in) |
+| **5** | Thiết bị & Dịch vụ phụ trợ | `Chỉ mục tìm kiếm (Indexing)`, `Bluetooth`, `Dịch vụ in (Print Spooler)`, `Bàn phím cảm ứng` | Tùy chọn chủ động (Opt-in) |
+| **6** | Trình duyệt Web | `Không cài đặt`, `Brave`, `Mozilla Firefox`, `Google Chrome` | Tùy chọn (Brave có sẵn) |
 
 ---
 
-## 5. Desktop vs Laptop Adaptation
+## 5. Tự động Nhận diện Máy bàn (Desktop) & Máy tính xách tay (Laptop)
 
-SuperStrike automatically detects chassis type at setup time:
+Hệ thống tự động phát hiện dạng phần cứng trong quá trình thiết lập để áp dụng thông số phù hợp:
 
-| Feature | Desktop Implementation | Laptop Implementation |
+| Tính năng | Cấu hình cho Máy bàn (Desktop) | Cấu hình cho Laptop |
 | :--- | :---: | :---: |
-| **AC Power Plan** | High Performance (100% Unparked Cores) | Dynamic Gaming Scheme |
-| **Battery (DC) Profile** | N/A | Balanced (Battery-Safe) |
-| **D3Cold & USB Power Saving** | Disabled (Zero peripheral latency) | Preserved (Prevents idle drain) |
-| **Display Acceleration** | HAGS + Dedicated GPU Focus | HAGS + Hybrid Switching Safe |
+| **Chế độ nguồn khi cắm sạc (AC)** | Hiệu năng cao (Bỏ đỗ lõi CPU - 100% Unparked) | Cân bằng tối ưu cho tác vụ chơi game |
+| **Chế độ nguồn khi dùng pin (DC)** | Không áp dụng | Cân bằng tiết kiệm pin tiêu chuẩn |
+| **Tiết kiệm điện USB & D3Cold** | Tắt (Loại bỏ độ trễ phản hồi của chuột/phím) | Giữ nguyên (Tránh tiêu hao pin lúc chờ) |
+| **Cơ chế dựng hình đồ họa** | HAGS + Ưu tiên trực tiếp GPU rời | HAGS + Đảm bảo chuyển đổi đồ họa kép an toàn |
 
 ---
 
-## 6. PostInstall Revert Tools
+## 6. Bộ Công cụ Hoàn tác Sau Cài đặt (PostInstall)
 
-Every modification includes an instant one-click toggle script located in `C:\Users\Public\Desktop\PostInstall\`:
+Mọi thay đổi đều có thể bật/tắt nhanh chóng thông qua các tập lệnh tiện ích được đặt tại thư mục `C:\Users\Public\Desktop\PostInstall\`:
 
-| Tool | Action |
+| Tập lệnh | Chức năng thực hiện |
 | :--- | :--- |
-| `Toggle-Power-Plan.bat` | Switch between Ultimate, High, and Balanced power schemes |
-| `Toggle-VBS-Core-Isolation.bat` | Enable or disable Virtualization-Based Security (VBS / HVCI) |
-| `Toggle-Windows-Defender.bat` | Toggle Real-time Protection and Cloud Sample Submission |
-| `Toggle-Windows-Update.bat` | Toggle Windows Update and Delivery Optimization background tasks |
-| `Toggle-MPO-HAGS.bat` | Inspect and toggle Multi-Plane Overlay (MPO) and HAGS states |
-| `DirectFlip-CPU-Hybrid.bat` | Inspect DirectFlip presentation and CPU thread scheduling hooks |
-| `Toggle-WiFi-Bluetooth.bat` | Instantly restore wireless, Bluetooth, and device pairing services |
-| `Toggle-Print-Spooler.bat` | Instantly restore printer spooler service dependencies |
-| `Restore-Visual-Effects.bat` | Reset all Windows animations and visual effects to default |
+| `Toggle-Power-Plan.bat` | Chuyển đổi linh hoạt giữa các gói nguồn: Ultimate, High Performance và Balanced |
+| `Toggle-VBS-Core-Isolation.bat` | Bật hoặc tắt tính năng Bảo mật dựa trên ảo hóa (VBS / HVCI) |
+| `Toggle-Windows-Defender.bat` | Bật hoặc tắt cơ chế Bảo vệ thời gian thực và Gửi mẫu phân tích đám mây |
+| `Toggle-Windows-Update.bat` | Bật hoặc tạm dừng các tác vụ tự động tải bản cập nhật và tối ưu phân phối mạng |
+| `Toggle-MPO-HAGS.bat` | Kiểm tra trạng thái và điều chỉnh Multi-Plane Overlay (MPO) cùng tính năng HAGS |
+| `DirectFlip-CPU-Hybrid.bat` | Kiểm tra trạng thái hiển thị DirectFlip và cơ chế phân phối luồng CPU |
+| `Toggle-WiFi-Bluetooth.bat` | Khôi phục nhanh các dịch vụ kết nối Wi-Fi, Bluetooth và ghép đôi thiết bị không dây |
+| `Toggle-Print-Spooler.bat` | Khôi phục ngay dịch vụ hỗ trợ máy in (Print Spooler) |
+| `Restore-Visual-Effects.bat` | Đưa toàn bộ hiệu ứng hình ảnh và hoạt ảnh Windows về trạng thái ban đầu |
 
 ---
 
-## 7. How to Install
+## 7. Hướng dẫn Cài đặt
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/1.PNG" width="410" alt="SuperStrike in AME Wizard">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/1.PNG" width="410" alt="SuperStrike trong AME Wizard">
   &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/2.PNG" width="410" alt="Options Selection">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/2.PNG" width="410" alt="Lựa chọn cấu hình">
 </p>
 
-1. Download `Superstrike-x1.apbx` from [Releases](https://github.com/nyxvergil/Superstrike-x1/releases) and [AME Wizard Beta](https://download.ameliorated.io/AME%20Beta.zip).
-2. Launch `AME Wizard.exe` as Administrator.
-3. Drag and drop `Superstrike-x1.apbx` into the window (password: `malte` if prompted).
-4. Select your preferred options and click **Next**.
-5. Reboot your system once the setup completes.
+1. Tải tệp `Superstrike-x1.apbx` từ mục [Releases](https://github.com/nyxvergil/Superstrike-x1/releases) và công cụ [AME Wizard Beta](https://download.ameliorated.io/AME%20Beta.zip).
+2. Nhấp chuột phải vào `AME Wizard.exe`, chọn **Run as Administrator**.
+3. Kéo thả tệp `Superstrike-x1.apbx` vào giao diện của AME Wizard (nhập mật khẩu giải mã: `malte` nếu có yêu cầu).
+4. Tích chọn các thành phần theo đúng nhu cầu sử dụng của bạn, sau đó nhấn **Next**.
+5. Khởi động lại máy tính sau khi phần mềm báo hoàn thành.
 
 ---
 
-## 8. Anti-Cheat & System Compatibility
+## 8. Khả năng Tương thích Anti-Cheat & Phiên bản Hệ điều hành
 
-### 100% Anti-Cheat Certified
-Operates purely on valid Windows configuration layers. Crucial security mechanisms (CFG, DEP, driver signing) remain intact:
+### Hoạt động an toàn với các hệ thống Anti-Cheat
+Chỉ tác động vào các tầng cấu hình tiêu chuẩn của hệ điều hành. Các cơ chế bảo vệ nhân quan trọng (CFG, DEP, xác thực chữ ký số driver) được giữ nguyên vẹn:
 - **Riot Vanguard** (VALORANT, League of Legends)
 - **Easy Anti-Cheat** (Fortnite, Apex Legends, Rust)
 - **BattlEye** (Rainbow Six Siege, PUBG, Destiny 2)
-- **FACEIT Anti-Cheat** (CS2)
+- **FACEIT Anti-Cheat** (Counter-Strike 2)
 - **Ricochet** (Call of Duty: Warzone)
 
-### Supported Builds (AMD64 / x64)
+### Phiên bản Windows được hỗ trợ (Kiến trúc AMD64 / x64)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Windows%2010-22H2%20(Build%2019045)-5B21FF?style=flat-square&logo=windows11&logoColor=white" alt="Windows 10 22H2">
@@ -188,29 +188,40 @@ Operates purely on valid Windows configuration layers. Crucial security mechanis
 
 ---
 
-## 9. Frequently Asked Questions
+## 9. Câu hỏi Thường gặp (FAQ)
 
 <details>
-<summary><strong>Why is VBS (Virtualization-Based Security) disabled by default?</strong></summary>
+<summary><strong>Vì sao VBS (Bảo mật Dựa trên Ảo hóa) được đề xuất tắt trong cấu hình chơi game?</strong></summary>
 
-Memory Integrity (HVCI) and VBS introduce CPU virtualization overhead, reducing 1% Low framerates by 5% to 15% in CPU-bound competitive games. It is turned off by default for maximum frametime smoothness, but can be restored anytime via `Toggle-VBS-Core-Isolation.bat`.
+Cơ chế Tính toàn vẹn bộ nhớ (HVCI) và VBS vận hành một lớp ảo hóa nền của CPU, có thể làm giảm từ 5% đến 15% mức 1% Low FPS trong các tựa game thi đấu phụ thuộc nhiều vào CPU. Tính năng này được tắt để tối ưu hóa độ mượt khung hình, nhưng bạn hoàn toàn có thể kích hoạt lại bất kỳ lúc nào bằng tệp `Toggle-VBS-Core-Isolation.bat`.
 </details>
 
 <details>
-<summary><strong>Does SuperStrike break Windows Update?</strong></summary>
+<summary><strong>SuperStrike có làm hỏng tính năng cập nhật Windows Update không?</strong></summary>
 
-No. The Windows servicing stack is preserved. If you want to pause or disable background driver updates, use `Toggle-Windows-Update.bat` in PostInstall.
+Không. Cơ chế dịch vụ nền (servicing stack) của Windows vẫn được giữ lại. Nếu muốn chủ động bật hoặc tạm hoãn các bản cập nhật driver tự động, bạn có thể sử dụng công cụ `Toggle-Windows-Update.bat` trong thư mục PostInstall.
 </details>
 
 <details>
-<summary><strong>What if I need Bluetooth, Wi-Fi, or Printing?</strong></summary>
+<summary><strong>Nếu tôi cần dùng lại Bluetooth, Wi-Fi hoặc Máy in thì xử lý thế nào?</strong></summary>
 
-Keep their checkboxes unchecked during setup. If already applied, run `Toggle-WiFi-Bluetooth.bat` or `Toggle-Print-Spooler.bat` from PostInstall to restore them instantly.
+Trong bước cài đặt, bạn chỉ cần giữ nguyên trạng thái không chọn cho các mục này. Trường hợp đã lỡ tắt, bạn chỉ cần chạy tệp `Toggle-WiFi-Bluetooth.bat` hoặc `Toggle-Print-Spooler.bat` trong thư mục PostInstall ngoài màn hình Desktop để kích hoạt lại tức thì.
 </details>
 
 ---
 
-## Links & Verification
+## 10. Tuyên bố Miễn trừ Trách nhiệm (Disclaimer)
+
+> [!IMPORTANT]
+> **Vui lòng đọc kỹ trước khi sử dụng:**
+> 1. **Mục đích chia sẻ:** Playbook này được xây dựng và chia sẻ với mục đích nghiên cứu, tối ưu hóa trải nghiệm cá nhân dựa trên các thông số đo lường thực tế.
+> 2. **Sự biến thiên hiệu năng:** Kết quả kiểm thử thực tế có thể có sự khác biệt nhất định phụ thuộc vào cấu hình phần cứng cụ thể, phiên bản BIOS/Driver, điều kiện nhiệt độ và môi trường phần mềm của từng hệ thống.
+> 3. **Khuyến cáo sao lưu:** Mặc dù bộ tinh chỉnh đã được thử nghiệm kỹ lưỡng về độ ổn định, người dùng luôn được khuyến nghị chủ động sao lưu các dữ liệu quan trọng hoặc tạo điểm khôi phục hệ thống (System Restore Point) trước khi tiến hành can thiệp sâu vào hệ điều hành.
+> 4. **Trách nhiệm người dùng:** Người dùng hoàn toàn tự chịu trách nhiệm đối với các rủi ro phát sinh trong quá trình vận hành thiết bị cá nhân hoặc xung đột không tương thích do các phần mềm bên thứ ba gây ra.
+
+---
+
+## Liên kết & Xác thực Tệp tin
 
 <p align="center">
   <a href="https://strikeos.site">
@@ -229,5 +240,5 @@ SHA256: 00B7EC7999CC0792D25EC5628F44AE3823ADE0B66546A1EA156EF5B74E884EA4  Supers
 ```
 
 <p align="center">
-  <sub>© 2026 StrikeOS · SuperStrike X1 · Zero-Placebo Optimization Architecture</sub>
+  <sub>© 2026 StrikeOS · SuperStrike X1 · Kiến trúc Tối ưu hóa Thực nghiệm</sub>
 </p>
