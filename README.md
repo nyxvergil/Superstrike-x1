@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-    <img src="./assets/bannerstrike.png" alt="SuperStrike Banner" width="800" height="auto">
+    <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/bannerstrike.png" alt="SuperStrike Banner" width="800" height="auto">
   </picture>
 
   <p>
@@ -49,7 +49,7 @@ A single reboot is required after completion.
 </td>
 <td width="35%" align="center">
 
-<img src="./assets/playbook_cube.png" width="210" alt="SuperStrike Playbook">
+<img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/playbook_cube.png" width="210" alt="SuperStrike Playbook">
 
 </td>
 </tr>
@@ -69,7 +69,7 @@ A single reboot is required after completion.
 Performance claims must be substantiated by empirical data. Below is a repeatable 60-second capture loop comparing stock Windows against SuperStrike X1 under identical hardware, driver, and thermal conditions running **GTA5VN / FiveM (`GTASVN_GameProcess.exe`)**:
 
 <p align="center">
-  <img src="./assets/benchmark.png" width="820" alt="Frame-Time Analysis Benchmark Data">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/benchmark.png" width="820" alt="Frame-Time Analysis Benchmark Data">
 </p>
 
 ### Metric Comparison Table (PresentMon Capture)
@@ -123,7 +123,7 @@ SuperStrike X1 structures its optimizations across four isolated subsystems:
 SuperStrike strikes a balance between clean system response and functional desktop usability. All window sliding and fading animations are trimmed while preserving critical font rendering and explorer usability:
 
 <p align="center">
-  <img src="./assets/visual_effects_preset.png" width="400" alt="SuperStrike Visual Effects Configuration">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/visual_effects_preset.png" width="400" alt="SuperStrike Visual Effects Configuration">
 </p>
 
 - **Smooth edges of screen fonts** — Enabled (maintains ClearType font readability across high-DPI displays).
@@ -196,9 +196,9 @@ PostInstall\
 ## 7. Installation Walkthrough
 
 <p align="center">
-  <img src="./assets/1.PNG" width="410" alt="SuperStrike loaded in AME Wizard">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/1.PNG" width="410" alt="SuperStrike loaded in AME Wizard">
   &nbsp;&nbsp;
-  <img src="./assets/2.PNG" width="410" alt="Custom Features Selection">
+  <img src="https://raw.githubusercontent.com/nyxvergil/Superstrike-x1/main/assest/2.PNG" width="410" alt="Custom Features Selection">
 </p>
 
 1. **Obtain Files:** Download `Superstrike-x1.apbx` from [GitHub Releases](https://github.com/StrikeOS/Superstrike-x1/releases) and grab the [AME Wizard Beta](https://download.ameliorated.io/AME%20Beta.zip).
